@@ -1,15 +1,18 @@
 .footer {
-    height: 300px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    ul {     
-        display: flex;
-        li {
-            font-size: 44px;
-            color: #ffffff;
-            list-style: none;
-            margin: 0 10px;
-        }
+    flex-direction: column;
+
+    background: rgb(95,157,189);
+    background: linear-gradient(90deg, rgba(95,157,189,1) 2%, rgba(47,102,41,0.9535700158227848) 28%, rgba(27,46,56,1) 97%);
+    div {
+        font-size: 48px;
+        color: #ffffff;
+    }
+    img {
+        margin: 18px 0;
+        width: 360px;
     }
 }
