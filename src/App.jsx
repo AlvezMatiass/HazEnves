@@ -1,14 +1,23 @@
 import "./App.css";
-import Contacto from "./components/Contacto/Contacto.jsx";
+
+
+import Inicio from "./components/Inicio/Inicio";
+
+import Nosotros from "./components/Nosotros/Nosotros";
+
+import Proceso from "./components/Proceso/Proceso";
+
+import Servicio from "./components/Vino/Vino";
+
+import Participacion from "./components/Participacion/Participacion";
+
+import Vino from "./components/Vino/Vino";
+
+import Carrousel from "./components/Carrousel/Carrousel";
+
+import Encontrarnos from "./components/Encontrarnos/Encontrarnos";
 
 import Footer from "./components/Footer/Footer";
-import Inicio from "./components/Inicio/Inicio";
-import Nosotros from "./components/Nosotros/Nosotros";
-import Participacion from "./components/Participacion/Participacion";
-import Presentacion from "./components/Presentacion/Presentacion";
-import Proceso from "./components/Proceso/Proceso";
-import Servicio from "./components/Servicio/Servicio";
-import Carrousel from "./components/Carrousel/Carrousel";
 
 function App() {
   return (
@@ -21,13 +30,13 @@ function App() {
 
       <Presentacion />
 
-      <Servicio />
-
       <Participacion />
 
-      <Participacion/>
+      <Vino />
 
-      <Contacto/>
+      <Carrousel />
+
+      <Encontrarnos />
 
       <Footer />
     </div>
