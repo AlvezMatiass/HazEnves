@@ -1,13 +1,10 @@
 import "./App.css";
 
-
 import Inicio from "./components/Inicio/Inicio";
 
 import Nosotros from "./components/Nosotros/Nosotros";
 
 import Proceso from "./components/Proceso/Proceso";
-
-import Servicio from "./components/Vino/Vino";
 
 import Participacion from "./components/Participacion/Participacion";
 

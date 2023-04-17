@@ -6,52 +6,60 @@ const handleDragStart = (e) => e.preventDefault();
 
 const items = [
   <img
+    className="imgCarrousel"
     src="/img/img1.png"
     onDragStart={handleDragStart}
     role="presentation"
-    style={{ padding: "1rem", height: "50vh" }}
+    style={{ margin: "2rem", padding: "1rem", height: "85vh" }}
   />,
   <img
+    className="imgCarrousel"
     src="/img/img2.png"
     onDragStart={handleDragStart}
     role="presentation"
-    style={{ padding: "1rem", height: "50vh" }}
+    style={{ margin: "2rem", padding: "1rem", height: "85vh" }}
   />,
   <img
+    className="imgCarrousel"
     src="/img/img3.png"
     onDragStart={handleDragStart}
     role="presentation"
-    style={{ padding: "1rem", height: "50vh" }}
+    style={{ margin: "2rem", padding: "1rem", height: "85vh" }}
   />,
   <img
+    className="imgCarrousel"
     src="/img/img4.png"
     onDragStart={handleDragStart}
     role="presentation"
-    style={{ padding: "1rem", height: "50vh" }}
+    style={{ margin: "2rem", padding: "1rem", height: "85vh" }}
   />,
   <img
+    className="imgCarrousel"
     src="/img/img5.png"
     onDragStart={handleDragStart}
     role="presentation"
-    style={{ padding: "1rem", height: "50vh" }}
+    style={{ margin: "2rem", padding: "1rem", height: "85vh" }}
   />,
   <img
+    className="imgCarrousel"
     src="/img/img6.png"
     onDragStart={handleDragStart}
     role="presentation"
-    style={{ padding: "1rem", height: "50vh" }}
+    style={{ margin: "2rem", padding: "1rem", height: "85vh" }}
   />,
   <img
+    className="imgCarrousel"
     src="/img/img7.png"
     onDragStart={handleDragStart}
     role="presentation"
-    style={{ padding: "1rem", height: "50vh" }}
+    style={{ margin: "2rem", padding: "1rem", height: "85vh" }}
   />,
   <img
+    className="imgCarrousel"
     src="/img/img8.png"
     onDragStart={handleDragStart}
     role="presentation"
-    style={{ padding: "1rem", height: "50vh" }}
+    style={{ margin: "2rem", padding: "1rem", height: "85vh" }}
   />,
 ];
 
@@ -74,7 +82,7 @@ const Carrousel = () => {
       <AliceCarousel
         autoPlay
         autoPlayStrategy="default"
-        autoPlayInterval={2500}
+        autoPlayInterval={2200}
         animationDuration={1000}
         animationType="fadeout"
         autoHeight
