@@ -6,9 +6,11 @@ import Nosotros from "./components/Nosotros/Nosotros";
 
 import Proceso from "./components/Proceso/Proceso";
 
+import Vino from "./components/Vino/Vino";
+
 import Participacion from "./components/Participacion/Participacion";
 
-import Vino from "./components/Vino/Vino";
+import Presentacion from "./components/Presentacion/Presentacion";
 
 import Carrousel from "./components/Carrousel/Carrousel";
 
@@ -25,11 +27,11 @@ function App() {
 
       <Proceso />
 
-      <Presentacion />
+      <Vino />
 
       <Participacion />
 
-      <Vino />
+      <Presentacion />
 
       <Carrousel />
 
