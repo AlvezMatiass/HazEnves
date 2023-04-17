@@ -42,7 +42,11 @@ function App() {
 
       <Participacion />
 
-      <Presentacion />   
+      <Presentacion />  
+
+      <div className="textoRandom">
+        <p className="ttercero">“<strong>Prendas únicas</strong> pensadas para vivir una experiencia de conexión con la <strong>naturaleza.</strong>”</p>
+      </div> 
 
       <Carrousel />
 
