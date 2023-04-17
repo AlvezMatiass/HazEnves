@@ -8,3 +8,12 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #E8E5D2;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+text-decoration: none;
+color: #f1efef;
+}

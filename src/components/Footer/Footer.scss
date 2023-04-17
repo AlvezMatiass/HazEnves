@@ -1,18 +1,28 @@
 .footer {
-  height: 25vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    height: 470px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 
-    background: rgb(95,157,189);
-    background: linear-gradient(90deg, rgba(95,157,189,1) 2%, rgba(47,102,41,0.9535700158227848) 28%, rgba(27,46,56,1) 97%);
-    div {
-        font-size: 48px;
-        color: #ffffff;
+    .imgLogoFooter {
+        width: 398px;
+        height: 240px;
+        margin: auto 10px 30px 10px;
     }
-    img {
-        margin: 18px 0;
-        width: 360px;
+
+    p {
+        color: #504F4E;
+        margin: auto 0 30px 0;
+        font-size: 28px;
+        font-weight: 600;
+        font-family: 'Spectral', serif;
+    }
+
+    .iconos {
+        margin: auto 0 30px 0;
+
+        img {
+            margin: 0 5px;
+        }
     }
 }
