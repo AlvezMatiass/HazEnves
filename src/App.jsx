@@ -24,8 +24,6 @@ function App() {
 
       <Participacion/>
 
-      <Contacto/>
-
       <Footer/>
     </div>
   )
