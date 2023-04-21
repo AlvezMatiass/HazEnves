@@ -1,13 +1,21 @@
 .nosotros {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+
+    display: flex;
+    justify-content: center;
 
     background-color: #E8E5D2;
     font-family: 'Spectral', serif;
     display: flex;
 
     .argentinaImg {
-        width: 935px;
+        max-width: 840px;
+        min-width: 615px;
+        margin: 0 0 0 40px;
+        img {
+            width: 100%;
+        }
     }
 
     .nosotrosContainer {
@@ -17,18 +25,18 @@
         align-content: center;
         text-align: center;
         color: #593B34;
-        margin: 16px 0 0 40px;
+        margin: 16px 40px 0 40px;
     
         h4 {
             font-weight: normal;
-            font-size: 60px;
-            margin: 0 0 30px 0;
+            font-size: 52px;
+            margin: 0 0 20px 0;
         }
 
         p {
-            font-size: 35px;
+            font-size: 30px;
             line-height: 40px;
-            width: 720px;
+            width: 630px;
         }
     }
   }
@@ -40,17 +48,17 @@
     margin: 60px 0;
 
     .tsegundo {
-        width: 1673px;
+        width: 1300px;
     }
 
     .ttercero {
-        width: 1258px;
+        width: 1300px;
     }
 
     p {
         width: 1323px;
         font-family: 'Spectral', serif;
-        font-size: 50px;
+        font-size: 38px;
         text-align: center;
         color: #593B34;
     }

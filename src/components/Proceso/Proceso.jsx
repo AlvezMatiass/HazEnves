@@ -2,7 +2,7 @@ import React from 'react'
 
 const Proceso = () => {
   return (
-    <div>
+    <div id='3'>
         Proceso
     </div>
   )

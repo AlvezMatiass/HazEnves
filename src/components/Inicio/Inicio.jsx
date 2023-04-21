@@ -6,8 +6,8 @@ const Inicio = () => {
         <header className="header">
           <li><a href="">Inicio</a></li>
           <li><a href="#2">Sobre Nosotros</a></li>
-          <li><a href="">Proceso</a></li>
-          <li><a href="">Nuestros Servicios</a></li>
+          <li><a href="#3">Proceso</a></li>
+          <li><a href="#4">Nuestros Servicios</a></li>
         </header>
 
         <main className="main">

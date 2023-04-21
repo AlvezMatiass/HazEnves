@@ -2,7 +2,7 @@ import React from 'react'
 
 const Encontrarnos = () => {
   return (
-    <div>
+    <div id='4'>
         Encontrarnos
     </div>
   )
