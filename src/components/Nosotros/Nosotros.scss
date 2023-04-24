@@ -11,7 +11,7 @@
 
     .argentinaImg {
         max-width: 840px;
-        min-width: 615px;
+        min-width: 380px;
         margin: 0 0 0 40px;
         img {
             width: 100%;
@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px 0;
+    margin: 60px;
 
     .tsegundo {
         width: 1300px;
@@ -63,4 +63,167 @@
         color: #593B34;
     }
  
+}
+
+.hazFondo {
+    background-image: url('./img/hazpalabraa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.envesFondo {
+    background-image: url('./img/envespalabra.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 1360px) {
+    .nosotros {
+        .nosotrosContainer {
+            
+            h4 {
+                font-size: 42px;
+                margin: 0 0 20px 0;
+            }
+            
+            p {
+                font-size: 26px;
+                width: 480px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .textoRandom {
+        p {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    .nosotros {
+        .nosotrosContainer {
+            
+            h4 {
+                font-size: 34px;
+                margin: 0 0 5px 0;
+            }
+            
+            p {
+                font-size: 19px;
+                width: 370px;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    .argentinaImg {
+        display: none;
+    }
+
+    .nosotros {
+
+        .nosotrosContainer {
+            background-image: url('./img/argentinaFondo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 0 0 0 0;
+            height: 620px;
+            h4 {
+                font-size: 48px;
+            }
+    
+            p {
+                font-size: 24px;
+                width: 550px;
+                line-height: 40px;
+            }
+        }
+    } 
+
+    .textoRandom {
+        margin: 40px 16px;
+        p {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .nosotros {
+
+        .nosotrosContainer {
+            background-image: url('./img/argentinaFondo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 0 0 0 0;
+            height: 530px;
+            width: 500px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4 {
+                font-size: 40px;
+            }
+    
+            p {
+                font-size: 18px;
+                width: 380px;
+                line-height: 28px;
+            }
+        }
+    } 
+
+    .textoRandom {
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .nosotros {
+
+        .nosotrosContainer {
+            background-image: url('./img/argentinaFondo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 0 0 0 0;
+            height: 420px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4 {
+                font-size: 36px;
+                margin: 0 0 0 0;
+            }
+    
+            p {
+                font-size: 16px;
+                width: 300px;
+                line-height: 26px;
+            }
+        }
+    } 
+
+    .textoRandom {
+        p {
+            font-size: 16px;
+        }
+    }
 }

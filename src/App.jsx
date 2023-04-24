@@ -34,8 +34,8 @@ function App() {
 
       <Proceso />
 
-      <div className="textoRandom">
-        <p className="tsegundo">“Como una hoja que posee dos caras un haz y un envés, nuestros productos proponen una doble experiencia: lo que <strong>se ve/toca</strong> y lo que <strong>se siente</strong>, en una conexión  con lo <strong>natural.</strong>”</p>
+      <div className="textoRandom hazEnvesFondo">
+        <p className="tsegundo">“Como una hoja que posee dos caras un<strong className="hazFondo"> haz </strong>y un<strong className="envesFondo"> envés,</strong> nuestros productos proponen una doble experiencia: lo que <strong>se ve/toca</strong> y lo que <strong>se siente</strong>, en una conexión  con lo <strong>natural.</strong>”</p>
       </div>
 
       <Vino />

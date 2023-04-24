@@ -3,7 +3,7 @@ import React from 'react'
 const Vino = () => {
   return (
     <div>
-        Vino
+      vino
     </div>
   )
 }

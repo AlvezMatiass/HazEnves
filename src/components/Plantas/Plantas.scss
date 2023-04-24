@@ -21,3 +21,45 @@
         width: 922px;
     }
 }
+
+@media (max-width: 1300px) {
+ .imgFrase {
+    p   {
+        font-size: 44px;
+        width: 860px;
+    }
+ }
+}
+
+@media (max-width: 900px) {
+    .imgFrase {
+       p   {
+           font-size: 34px;
+           width: 560px;
+           line-height: 50px;
+           margin: 0 16px;
+       }
+    }
+}
+
+@media (max-width: 600px) {
+    .imgFrase {
+       p   {
+           font-size: 26px;
+           width: 400px;
+           line-height: 40px;
+           margin: 0 22px;
+       }
+    }
+}
+
+@media (max-width: 600px) {
+    .imgFrase {
+       p   {
+           font-size: 22px;
+           width: 300px;
+           line-height: 30px;
+           margin: 0 16px;
+       }
+    }
+}
