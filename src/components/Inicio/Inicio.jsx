@@ -5,16 +5,16 @@ const Inicio = () => {
     <div>
       <header className="header">
         <li>
-          <a href="#inicio">Inicio</a>
+          <a href="">Inicio</a>
         </li>
         <li>
-          <a href="#nosotros">Sobre Nosotros</a>
+          <a href="#2">Sobre Nosotros</a>
         </li>
         <li>
-          <a href="#proceso">Proceso</a>
+          <a href="">Proceso</a>
         </li>
         <li>
-          <a href="#servicios">Nuestros Servicios</a>
+          <a href="">Nuestros Servicios</a>
         </li>
       </header>
 

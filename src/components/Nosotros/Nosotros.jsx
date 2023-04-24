@@ -2,8 +2,8 @@ import React from "react";
 
 const Nosotros = () => {
   return (
-    <div className="nosotros" id="nosotros">
-      <img src="\img\argentina.gif" alt="" className="argentinaImg"></img>
+    <div className="nosotros" id="2">
+      <img src="/img/argentinaprueba.gif" alt="" className="argentinaImg"></img>
       <div className="nosotrosContainer">
         <h4>Nosotros</h4>
         <p>

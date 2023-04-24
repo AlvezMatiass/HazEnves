@@ -5,11 +5,11 @@
     align-items: center;
     justify-content: center;
 
-    gap: 0 140px;
+    gap: 0 110px;
     height: 100px;
     width: 100%;
     color: #f1efef;
-    font-size: 26px;
+    font-size: 22px;
     background: rgb(73,64,61);
     background: linear-gradient(180deg, rgba(73,64,61,1) 2%, rgba(27,46,56,0) 100%);
     z-index: 2;
@@ -38,7 +38,7 @@
 
     img {
         position: absolute;
-        width: 64px;
+        width: 54px;
         color: #e9e1d6;
         mix-blend-mode: difference;
     }

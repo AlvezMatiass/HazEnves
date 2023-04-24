@@ -11,7 +11,7 @@
     p {
         font-family: 'Spectral', serif;
         text-align: center;
-        font-size: 60px;
+        font-size: 54px;
         color: #FFFFFF;
         font-weight: 600;
         text-shadow: 0px 4px 4px hsl(0, 0%, 5%, 0.25);
@@ -19,5 +19,47 @@
       
       
         width: 922px;
+    }
+}
+
+@media (max-width: 1300px) {
+ .imgFrase {
+    p   {
+        font-size: 44px;
+        width: 860px;
+    }
+ }
+}
+
+@media (max-width: 900px) {
+    .imgFrase {
+       p   {
+           font-size: 34px;
+           width: 560px;
+           line-height: 50px;
+           margin: 0 16px;
+       }
+    }
+}
+
+@media (max-width: 600px) {
+    .imgFrase {
+       p   {
+           font-size: 26px;
+           width: 400px;
+           line-height: 40px;
+           margin: 0 22px;
+       }
+    }
+}
+
+@media (max-width: 600px) {
+    .imgFrase {
+       p   {
+           font-size: 22px;
+           width: 300px;
+           line-height: 30px;
+           margin: 0 16px;
+       }
     }
 }

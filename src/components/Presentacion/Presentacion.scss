@@ -1,8 +1,18 @@
-.video {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    video {
-        width: 100%;
-    }
+.botonContainer {
+    position: absolute;
+    transform: translate(25px ,-75px);
+    display: flex;
+}
+
+.presentacionBotonMuted {
+    padding: 10px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    opacity: .8;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 202, 202, .5);
 }
