@@ -1,16 +1,12 @@
 .carrousel {
-  height: 90vh;
+  max-height: 90vh;
+  width: 100%;
   background-color: #e8e5d2;
   img {
     transition: transform 0.3s ease-out;
   }
-
   img:hover {
     transform: scale(1.08);
     margin: 2rem;
   }
 }
-
-// img:hover {
-//   transform: scale(1);
-// }

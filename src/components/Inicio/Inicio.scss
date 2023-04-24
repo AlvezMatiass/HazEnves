@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0 140px;
+    height: 100px;
+    width: 100%;
+    color: #f1efef;
+    font-size: 26px;
+    background: rgb(73,64,61);
+    background: linear-gradient(180deg, rgba(73,64,61,1) 2%, rgba(27,46,56,0) 100%);
+    z-index: 2;
+}
+
+.main {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    background-image: url('./img/inicio.png');
+
+    img {
+        width: 489px;
+        margin: 0 0 220px 210px;
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    right: 140px;
+    top: 0;
+    z-index: 3;
+
+    margin: 20px 0 0 20px;
+
+    img {
+        position: absolute;
+        width: 64px;
+        color: #e9e1d6;
+        mix-blend-mode: difference;
+    }
+}
