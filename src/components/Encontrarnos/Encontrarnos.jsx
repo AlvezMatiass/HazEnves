@@ -1,8 +1,7 @@
-import React from 'react'
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 
 const Encontrarnos = () => {
-  
   const [texto, setTexto] = useState("Texto original");
 
   const handleClick = () => {
@@ -11,31 +10,31 @@ const Encontrarnos = () => {
   };
 
   return (
-    <div id='4' className='encontrarnos'>
+    <div id="4" className="encontrarnos">
       <div className="encontrarnosContainer">
         <div className="encoTituloContainer">
-          <p className='encoTitulo'>Podemos Encontrarnos...</p>
+          <p className="encoTitulo">Podemos Encontrarnos...</p>
         </div>
-        <div className='imgContainer'>
-          <img src="./img/ropaRama.png" alt="" className='ramaImg'/>
+        <div className="imgContainer">
+          <img src="./img/ropaRama.png" alt="" className="ramaImg" />
           <div className="cuatroImgContainer">
-            <div className='pruebaFondoNashe' onClick={handleClick}>
-              <p className='imgFondoTexto'>{texto}</p>
+            <div className="pruebaFondoNashe" onClick={handleClick}>
+              <p className="imgFondoTexto">{texto}</p>
             </div>
-            <div className='pruebaFondoNashe'>
+            <div className="pruebaFondoNashe">
               <p>Reciclando tu prenda</p>
             </div>
-            <div className='pruebaFondoNashe'>
+            <div className="pruebaFondoNashe">
               <p>Reciclando tu prenda</p>
             </div>
-            <div className='pruebaFondoNashe'>
+            <div className="pruebaFondoNashe">
               <p>Reciclando tu prenda</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Encontrarnos;

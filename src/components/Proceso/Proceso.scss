@@ -1,0 +1,143 @@
+.proceso {
+  position: relative;
+  height: 110vh;
+  width: 92%;
+  margin: 15vh auto;
+
+  p {
+    text-align: center;
+    font-family: "Spectral", serif;
+    font-weight: normal;
+    color: #a6341b;
+    font-size: 2.2vw;
+
+    strong {
+      font-weight: 400;
+      font-size: 4vw;
+    }
+  }
+
+  img {
+    max-width: 26vw;
+    max-height: 26vw;
+  }
+
+  .flechas {
+    position: absolute;
+    left: 39.7vw;
+    top: 27.8vw;
+
+    p {
+      position: absolute;
+      top: 2.6vw;
+      left: -3.5vw;
+      color: #593b34;
+      white-space: nowrap;
+    }
+
+    .logoFlecha {
+      width: 9.5vw;
+      height: 8.5vw;
+      animation: spin 12s linear infinite;
+    }
+  }
+
+  .img1 {
+    position: absolute;
+    top: 6vw;
+    left: 6vw;
+  }
+
+  .img2 {
+    position: absolute;
+    top: 5vw;
+    left: 32vw;
+  }
+
+  .img3 {
+    position: absolute;
+    top: 6.001vw;
+    right: 6vw;
+  }
+
+  .img4 {
+    position: absolute;
+    top: 35vw;
+    right: 20vw;
+  }
+
+  .img5 {
+    position: absolute;
+    top: 35.001vw;
+    left: 19.5vw;
+
+    img {
+      height: 15.3vw;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+    }
+  }
+}
+
+.carrousel-proceso {
+  div {
+    text-align: center;
+  }
+  img {
+    position: relative;
+  }
+  p {
+    text-align: center;
+    font-family: "Spectral", serif;
+    font-weight: normal;
+    color: #a6341b;
+    font-size: 27px;
+
+    strong {
+      font-weight: 400;
+      font-size: 40px;
+    }
+  }
+  .titulo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #593b34;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .show-carrousel {
+    display: block;
+  }
+
+  .show-proceso {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .show-proceso {
+    display: block;
+  }
+
+  .show-carrousel {
+    display: none;
+  }
+}
+
+.img5 {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
