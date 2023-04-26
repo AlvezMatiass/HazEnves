@@ -1,3 +1,10 @@
+.videoRepre {
+    video {
+        height: 100%;
+        width: 100%;
+    }
+}
+
 .botonContainer {
     position: absolute;
     transform: translate(25px ,-75px);
@@ -15,4 +22,89 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(211, 202, 202, .5);
+}
+
+@media (max-width: 1000px) {
+
+    .videoRepre {
+        overflow: hidden;
+        height: 700px;
+
+        video {
+            scale: 2;
+        }
+    }
+
+    .botonContainer {
+        position: absolute;
+        transform: translate(6px ,-55px);
+        display: flex;
+    }
+
+    .presentacionBotonMuted {
+        padding: 9px 16px;
+        font-size: 18px;
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .videoRepre {
+        overflow: hidden;
+        height: 500px;
+
+        video {
+            scale: 2;
+        }
+    }
+
+    .botonContainer {
+        position: absolute;
+        transform: translate(6px ,-55px);
+        display: flex;
+    }
+
+    .presentacionBotonMuted {
+        padding: 6px 12px;
+        font-size: 16px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .videoRepre {
+        overflow: hidden;
+        height: 400px;
+
+        video {
+            scale: 2;
+        }
+    }
+}
+
+
+@media (max-width: 340px) {
+
+    .videoRepre {
+        overflow: hidden;
+        height: 400px;
+
+        video {
+            scale: 2.2;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+
+    .videoRepre {
+        overflow: hidden;
+        height: 400px;
+
+        video {
+            scale: 2.4;
+        }
+    }
 }

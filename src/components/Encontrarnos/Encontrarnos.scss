@@ -38,7 +38,7 @@
                 .pruebaFondoNashe {
                     width: 280px;
                     height: 300px;
-                    background-image: url('./img/partioLorenza.jpg');
+                    background-image: url('/img/partioLorenza.jpg');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
@@ -65,4 +65,39 @@
             }
         }
     }  
+}
+
+@media (max-width: 900px) {
+    .encontrarnos {
+        height: 60vh;
+        margin: 0 0 32px 0;
+        .encontrarnosContainer {
+    
+            .encoTituloContainer {
+    
+                .encoTitulo {
+                    font-family: 'Spectral', serif;
+                    font-size: 24px;
+                    color: #541E0A;
+        
+                }
+            }
+        
+            .imgContainer {
+                .ramaImg {
+                    display: none;
+                }
+
+                .cuatroImgContainer {
+                    gap: 14px;
+        
+                    .pruebaFondoNashe {
+                        width: 120px;
+                        height: 200px;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -117,6 +117,22 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .carrousel-proceso {
+    .titulo {
+      font-size: 38px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .carrousel-proceso {
+    .titulo {
+      font-size: 32px;
+    }
+  }
+}
+
 @media screen and (max-width: 899px) {
   .show-carrousel {
     display: block;

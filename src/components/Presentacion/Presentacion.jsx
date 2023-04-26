@@ -4,11 +4,15 @@ import { BsFillVolumeDownFill, BsFillVolumeMuteFill, BsArrowClockwise } from "re
 
 const Presentacion = () => {
 
-  const [muted, setMuted] = useState(false)
+  const [volume, setVolume] = useState(true);
 
-  function handleToggleMute() {
-    setMuted(!muted)
-  }
+  const handleToggleVolume = () => {
+    if (volume === false) {
+      setVolume(true);
+    } else {
+      setVolume(false);
+    }
+  };
 
   const playerRef = useRef(null);
 
@@ -20,20 +24,19 @@ const Presentacion = () => {
   };
 
   return (
-    <div>
+    <div className='videoRepre'>
       <ReactPlayer
         ref={playerRef}
         url='./img/haz&envés.mp4'
-        playing
-        loop
-        width='100%'
-        height='100%'
-        autoPlay
-        volume={muted ? 0 : 0.1}
+        playing={true}
+        loop={true}
+        muted={volume}
+        height= '100%'
+        width= '100%'
       />
       <div className='botonContainer'>
-        <button className='presentacionBotonMuted' onClick={handleToggleMute}>
-          {muted ? <BsFillVolumeMuteFill /> : <BsFillVolumeDownFill />}
+        <button className='presentacionBotonMuted' onClick={handleToggleVolume}>
+          {volume ? <BsFillVolumeMuteFill /> : <BsFillVolumeDownFill />}
         </button>
         <button className='presentacionBotonMuted' onClick={handleRestart}> <BsArrowClockwise /> </button>
       </div>
