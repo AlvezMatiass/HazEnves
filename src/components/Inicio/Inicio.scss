@@ -1,45 +1,147 @@
 .header {
-    position: fixed;
+  position: fixed;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    gap: 0 110px;
-    height: 100px;
-    width: 100%;
-    color: #f1efef;
-    font-size: 22px;
-    background: rgb(73,64,61);
-    background: linear-gradient(180deg, rgba(73,64,61,1) 2%, rgba(27,46,56,0) 100%);
-    z-index: 2;
+  gap: 0 110px;
+  height: 100px;
+  width: 100%;
+  color: #f1efef;
+  font-size: 22px;
+  background: rgb(73, 64, 61);
+  background: linear-gradient(
+    180deg,
+    rgba(73, 64, 61, 1) 2%,
+    rgba(27, 46, 56, 0) 100%
+  );
+  z-index: 2;
 }
 
-.main {
-    height: 100vh;
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-    display: flex;
-    align-items: center;
-    background-image: url('./img/inicio.png');
+.foto-inicio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation-name: fade, zoom-out;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.foto-inicio:first-child {
+  animation-delay: 0s;
+}
 
-    img {
-        width: 489px;
-        margin: 0 0 220px 210px;
-    }
+.foto-inicio:last-child {
+  animation-delay: 6s;
+}
+
+.logo-inicio {
+  position: absolute;
+  z-index: 2;
+  height: 34%;
+  top: 21.9vh;
+  left: 20.9vh;
+  animation-name: fadeFast;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  animation-delay: 0s;
+}
+.texto-inicio {
+  position: absolute;
+  z-index: 2;
+  width: 50vw;
+  font-family: "Spectral", serif;
+  color: #e8e5d2;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  top: 35.9vh;
+  left: 20.9vh;
+  animation-name: fadeFast;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  animation-delay: 6s;
 }
 
 .whatsapp {
-    position: fixed;
-    right: 140px;
-    top: 0;
-    z-index: 3;
+  position: fixed;
+  right: 140px;
+  top: 0;
+  z-index: 3;
 
-    margin: 20px 0 0 20px;
+  margin: 20px 0 0 20px;
 
-    img {
-        position: absolute;
-        width: 54px;
-        color: #e9e1d6;
-        mix-blend-mode: difference;
-    }
+  img {
+    position: absolute;
+    width: 54px;
+    color: #e9e1d6;
+    mix-blend-mode: difference;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeFast {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .logo-inicio {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .texto-inicio {
+    width: 60vw;
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+  }
 }
