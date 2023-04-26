@@ -1,5 +1,5 @@
 .imgFrase {
-    background-image: url('./img/fraseFondo.png');
+    background-image: url('/img/fraseFondo.png');
     background-position: center;
     height: 100vh;
     width: 100%;
@@ -24,6 +24,7 @@
 
 @media (max-width: 1300px) {
  .imgFrase {
+    height: 85vh;
     p   {
         font-size: 44px;
         width: 860px;
@@ -33,6 +34,8 @@
 
 @media (max-width: 900px) {
     .imgFrase {
+        height: 70vh;
+
        p   {
            font-size: 34px;
            width: 560px;
@@ -44,6 +47,7 @@
 
 @media (max-width: 600px) {
     .imgFrase {
+        height: 50vh;
        p   {
            font-size: 26px;
            width: 400px;

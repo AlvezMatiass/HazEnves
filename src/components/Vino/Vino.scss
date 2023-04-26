@@ -2,23 +2,118 @@
   background-image: url("/img/imgVino.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 
   position: relative;
   h4 {
-    height: 95%;
+    height: 98%;
     width: 728px;
     font-family: "Spectral", serif;
     font-weight: normal;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 2rem;
-    font-size: 40px;
+    font-size: 42px;
+    line-height: 70px;
     text-align: left;
     margin-right: 5%;
 
     color: #593b34;
+  }
+}
+
+@media (max-width: 1300px) {
+  .vinoImg {
+    h4 {
+      height: 96%;
+      width: 680px;
+      padding: 1.6rem;
+      font-size: 34px;
+      line-height: 58px;
+      text-align: left;
+      margin-right: 5%;
+  
+      color: #593b34;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .vinoImg {
+    h4 {
+      height: 96%;
+      width: 680px;
+      padding: 1.6rem;
+      margin: 8px 0;
+      font-size: 32px;
+      line-height: 52px;
+      text-align: left;
+      margin-right: 5%;
+  
+      color: #593b34;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .vinoImg {
+    justify-content: center;
+    align-items: center;
+    h4 {
+      height: 96%;
+      max-width: 600px;
+      padding: 1.6rem;
+      font-size: 28px;
+      line-height: 48px;
+      text-align: left;
+      margin: 16px 22px;
+    }
+  }
+}
+
+@media (max-width: 662px) {
+  .vinoImg {
+    justify-content: center;
+    align-items: center;
+    h4 {
+      height: 96%;
+      max-width: 380px;
+      padding: 1.6rem;
+      font-size: 24px;
+      line-height: 38px;
+      margin: 16px 22px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .vinoImg {
+    justify-content: center;
+    align-items: center;
+    h4 {
+      height: 96%;
+      max-width: 320px;
+      padding: 1.6rem;
+      font-size: 20px;
+      line-height: 32px;
+      margin: 16px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .vinoImg {
+    justify-content: center;
+    align-items: center;
+    h4 {
+      height: 96%;
+      max-width: 320px;
+      padding: 1.6rem;
+      font-size: 16px;
+      line-height: 26px;
+      margin: 16px;
+    }
   }
 }

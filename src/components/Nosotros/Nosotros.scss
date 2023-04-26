@@ -65,14 +65,14 @@
 }
 
 .hazFondo {
-  background-image: url("./img/hazpalabraa.png");
+  background-image: url("/img/hazpalabraa.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .envesFondo {
-  background-image: url("./img/envespalabra.png");
+  background-image: url("/img/envespalabra.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -125,7 +125,7 @@
 
   .nosotros {
     .nosotrosContainer {
-      background-image: url("./img/argentinaFondo.png");
+      background-image: url("/img/argentinaFondo.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -154,10 +154,6 @@
 @media (max-width: 620px) {
   .nosotros {
     .nosotrosContainer {
-      background-image: url("./img/argentinaFondo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
       margin: 0 0 0 0;
       height: 530px;
       width: 500px;
@@ -188,17 +184,8 @@
 @media (max-width: 500px) {
   .nosotros {
     .nosotrosContainer {
-      background-image: url("./img/argentinaFondo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
       margin: 0 0 0 0;
       height: 420px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       h4 {
         font-size: 36px;
         margin: 0 0 0 0;
@@ -218,3 +205,58 @@
     }
   }
 }
+
+@media (max-width: 380px) {
+  .nosotros {
+    .nosotrosContainer {
+      margin: 0 0 0 0;
+      height: 346px;
+      h4 {
+        font-size: 30px;
+        margin: 32px 0 0 0;
+      }
+
+      p {
+        font-size: 14px;
+        max-width: 260px;
+        margin: 0 8px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .textoRandom {
+    p {
+      font-size: 16px;
+      margin: 16px 0;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .nosotros {
+    .nosotrosContainer {
+      margin: 0 0 0 0;
+      height: 310px;
+      h4 {
+        font-size: 26px;
+        margin: 32px 0 0 0;
+      }
+
+      p {
+        font-size: 12px;
+        max-width: 230px;
+        margin: 0 8px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .textoRandom {
+    p {
+      font-size: 16px;
+      margin: 16px 0;
+    }
+  }
+}
+

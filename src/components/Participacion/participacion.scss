@@ -88,19 +88,19 @@
     .distinciones {
 
         .puroDiseContainer {
-            width: 240px;
+            width: 190px;
     
             .puroDise {
-                width: 160px;
+                width: 110px;
             }
         }
 
         .distinDisplay {
-            gap: 0 40px;
+            gap: 0 26px;
         }
     
         .selloBuen {
-            width: 240px;
+            width: 190px;
         }
     
         .yearMovi {
@@ -120,64 +120,24 @@
         }
         
         .indPremio {
-            font-size: 20px;
+            font-size: 16px;
+        }
+
+        .logoDistin {
+            width: 80px;
         }
     } 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 540px) {
 
     .distinciones {
 
         .puroDiseContainer {
-            width: 240px;
+            width: 200px;
     
             .puroDise {
-                width: 160px;
-            }
-        }
-
-        .distinDisplay {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-    
-        .selloBuen {
-            width: 240px;
-        }
-    
-        .yearMovi {
-            position: absolute;
-            transform: translate(100px, 0);
-        }
-    
-        .year {
-            color: #A6341B;
-            font-size: 24px;
-        }
-        
-        .disTitulo {
-            margin: 0 0 10px 0;
-            font-size: 42px;
-            color: #593B34;
-        }
-        
-        .indPremio {
-            font-size: 20px;
-        }
-    } 
-}
-
-@media (max-width: 500px) {
-
-    .distinciones {
-
-        .puroDiseContainer {
-            width: 220px;
-    
-            .puroDise {
-                width: 140px;
+                width: 120px;
             }
         }
 
@@ -188,7 +148,7 @@
         }
     
         .selloBuen {
-            width: 220px;
+            width: 200px;
         }
     
         .yearMovi {
@@ -203,7 +163,7 @@
         
         .disTitulo {
             margin: 0 0 5px 0;
-            font-size: 36px;
+            font-size: 30px;
             color: #593B34;
         }
         
