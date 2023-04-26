@@ -10,7 +10,7 @@ const style = {
   maxWidth: "400px",
 };
 const items = [
-  <div>
+  <div data-aos="zoom-out">
     <p>
       <strong>1</strong> Momento creativo
     </p>
@@ -64,7 +64,7 @@ const items = [
       <strong>5</strong> Apertura
     </p>
     <img
-      className="img5"
+      className="img5-carrousel"
       src="/img/ProcesoCreativo5.gif"
       onDragStart={handleDragStart}
       role="presentation"

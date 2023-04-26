@@ -1,180 +1,92 @@
 .header {
-    position: fixed;
+  position: fixed;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    gap: 0 110px;
-    height: 100px;
-    width: 100%;
-    color: #f1efef;
-    font-size: 22px;
-    background: rgb(73,64,61);
-    background: linear-gradient(180deg, rgba(73,64,61,1) 2%, rgba(27,46,56,0) 100%);
-    z-index: 2;
+  gap: 0 110px;
+  height: 100px;
+  width: 100%;
+  color: #f1efef;
+  font-size: 22px;
+  background: rgb(73, 64, 61);
+  background: linear-gradient(
+    180deg,
+    rgba(73, 64, 61, 1) 2%,
+    rgba(27, 46, 56, 0) 100%
+  );
+  z-index: 2;
 }
 
-.main {
-    height: 100vh;
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-    display: flex;
-    align-items: center;
-    background-image: url('/img/inicio.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
+.foto-inicio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation-name: fade, zoom-out;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.foto-inicio:first-child {
+  animation-delay: 0s;
+}
 
-    img {
-        width: 489px;
-        margin: 0 0 220px 210px;
-    }
+.logo-inicio {
+  position: absolute;
+  z-index: 2;
+  height: 34%;
+  top: 21.9vh;
+  left: 20.9vh;
+  animation-name: fadeFast;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  animation-delay: 0s;
+}
+.texto-inicio {
+  position: absolute;
+  z-index: 2;
+  width: 50vw;
+  font-family: "Spectral", serif;
+  color: #e8e5d2;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  top: 35.9vh;
+  left: 20.9vh;
+  animation-name: fadeFast;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  animation-delay: 6s;
 }
 
 .whatsapp {
     position: fixed;
-    right: 100px;
+    right: 140px;
     top: 0;
     z-index: 3;
 
-    margin: 20px 0 0 20px;
+  margin: 20px 0 0 20px;
 
-    img {
-        position: absolute;
-        width: 54px;
-        color: #e9e1d6;
-        mix-blend-mode: difference;
-    }
-}
-
-@media (max-width: 1300px) {
-
-    .main {
-        height: 100vh;
-    
-        img {
-            width: 380px;
-            margin: 0 0 220px 100px;
-        }
-    }
-    
-
-    .header {
-        gap: 0 70px;
-        height: 100px;
-        width: 100%;
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 990px) {
-
-    .main {
-        height: 79vh;
-    
-        img {
-            width: 300px;
-            margin: 0 0 220px 70px;
-        }
-    }
-
-    .whatsapp {
-        right: 86px;
-        top: 87vh;
-        margin: 20px 0 0 20px;
-    
-        img {
-            width: 52px;
-        }
-    }
-}
-
-@media (max-width: 750px) {
-
-    .main {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        img {
-            width: 300px;
-            margin: 0;
-        }
-    }
-
-    .header {
-        gap: 0 40px;
-        height: 92px;
-        width: 100%;
-        font-size: 18px;
-    }
-
-    .whatsapp {
-        right: 70px;
-        margin: 20px 0 0 20px;
-    
-        img {
-            width: 44px;
-        }
-    }
-}
-
-@media (max-width: 560px) {
-
-    .header {
-        gap: 0 18px;
-        height: 82px;
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .whatsapp {
-        right: 70px;
-        margin: 20px 0 0 20px;
-    
-        img {
-            width: 44px;
-        }
-    }
-}
-
-@media (max-width: 390px) {
-
-    .header {
-        gap: 0 12px;
-        height: 78px;
-        width: 100%;
-        font-size: 13px;
-    }
-
-    .whatsapp {
-        right: 70px;
-        top: 88vh;
-        margin: 20px 0 0 20px;
-    
-        img {
-            width: 42px;
-        }
-    }
-}
-
-@media (max-width: 360px) {
-
-    .header {
-        gap: 0 8px;
-        height: 78px;
-        width: 100%;
-        font-size: 12px;
-    }
-
-}
-
-@media (max-width: 280px) {
-
-    .header {
-        gap: 0 12px;
-        height: 70px;
-        width: 100%;
-        font-size: 10px;
-    }
+  img {
+    position: absolute;
+    width: 54px;
+    color: #e9e1d6;
+    mix-blend-mode: difference;
+  }
 }
