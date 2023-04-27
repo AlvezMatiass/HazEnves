@@ -8,15 +8,16 @@ const handleDragStart = (e) => e.preventDefault();
 const style = {
   margin: "auto",
   maxWidth: "400px",
+  maxHeight: "488px",
 };
 const items = [
-  <div data-aos="zoom-out">
+  <div>
     <p>
       <strong>1</strong> Momento creativo
     </p>
     <img
       className="imgCarrousel"
-      src="/img/ProcesoCreativo1.png"
+      src="/img/ProcesoCreativo1v.jpg"
       onDragStart={handleDragStart}
       role="presentation"
       style={style}
@@ -28,7 +29,7 @@ const items = [
     </p>
     <img
       className="imgCarrousel"
-      src="/img/ProcesoCreativo2.png"
+      src="/img/ProcesoCreativo2v.jpg"
       onDragStart={handleDragStart}
       role="presentation"
       style={style}
@@ -41,7 +42,7 @@ const items = [
     </p>
     <img
       className="imgCarrousel"
-      src="/img/ProcesoCreativo3.png"
+      src="/img/ProcesoCreativo3v.jpg"
       onDragStart={handleDragStart}
       role="presentation"
       style={style}
@@ -53,7 +54,7 @@ const items = [
     </p>
     <img
       className="imgCarrousel"
-      src="/img/ProcesoCreativo4.png"
+      src="/img/ProcesoCreativo4v.jpg"
       onDragStart={handleDragStart}
       role="presentation"
       style={style}
@@ -65,7 +66,7 @@ const items = [
     </p>
     <img
       className="img5-carrousel"
-      src="/img/ProcesoCreativo5.gif"
+      src="/img/ProcesoCreativo5v.gif"
       onDragStart={handleDragStart}
       role="presentation"
       style={style}

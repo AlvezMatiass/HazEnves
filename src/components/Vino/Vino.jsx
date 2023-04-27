@@ -2,9 +2,13 @@ import React from "react";
 
 const Vino = () => {
   return (
-    <div className="vinoImg">
-      <h4>
-        <strong></strong>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-delay="0"
+      className="vinoImg"
+    >
+      <h4 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         Nuestra intención es crear <strong>con vida</strong> mediante la
         transferencia de
         <strong> pigmentos naturales </strong>prendas de uso urbano. Hojas y
