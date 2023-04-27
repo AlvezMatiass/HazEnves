@@ -18,9 +18,15 @@ const Inicio = () => {
         </li>
       </header>
 
-      <main className="main">
-        <img src=".\img\logo.png" alt=""></img>
-      </main>
+      <div className="img-container">
+        <img src=".\img\logo.png" alt="logo" className="logo-inicio" />
+        <p className="texto-inicio">
+          Somos una propuesta de diseño <strong>innovadora</strong> sobre los
+          textiles.
+        </p>
+        <img className="foto-inicio" src="/img/inicio.png" alt="Imagen 1" />
+        <img className="foto-inicio" src="/img/inicio2.png" alt="Imagen 2" />
+      </div>
 
       <div className="whatsapp">
         <a href="">
