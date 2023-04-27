@@ -5,18 +5,20 @@ const Nosotros = () => {
     <div className="nosotros" id="2">
       <img src="/img/argentinaprueba.gif" alt="" className="argentinaImg"></img>
       <div className="nosotrosContainer">
-        <h4>Nosotros</h4>
-        <p>
+        <h4 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+          Nosotros
+        </h4>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
           <strong>Haz & ENVÉS</strong> nace a fines de <strong>2013</strong>,
           luego de recorrer el camino de descubrir y conocer el arte de trabajar
           con las plantas.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
           Incorporamos los <strong>tintes naturales</strong> como aporte de
           color y formas, comenzando así a investigar la vegetación de nuestro
           entorno y su potencialidad.{" "}
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
           Desarrollamos una paleta de colores y patrones geométricos naturales
           propios que combinamos con metales oxidados reutilizables obteniendo
           alta <strong>identidad mendocina</strong> en su expresión.

@@ -1,178 +1,187 @@
 .distinciones {
-    font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
+  text-align: center;
+  margin: 60px 0;
+
+  .distinDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 60px 0;
+    gap: 0 80px;
+    margin: 0 30px;
+  }
 
-    .distinDisplay {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 0 80px;
-        margin: 0 30px;
-    }
+  .puroDiseContainer {
+    width: 310px;
 
-    .puroDiseContainer {
-        width: 310px;
+    .puroDise {
+      width: 230px;
+    }
+  }
 
-        .puroDise {
-            width: 230px;
-        }
-    }
+  .selloBuen {
+    width: 310px;
+  }
 
-    .selloBuen {
-        width: 310px;
-    }
+  .yearMovi {
+    // position: absolute;
+    // margin-top: 10px;
+    // margin-left: 104px;
 
-    .yearMovi {
-        position: absolute;
-        transform: translate(80px, 20px);
-    }
+    // transform: translate(80px, 20px);
 
-    .year {
-        color: #A6341B;
-        font-size: 30px;
-    }
-    
-    .disTitulo {
-        margin: 0 0 30px 0;
-        font-size: 52px;
-        color: #593B34;
-    }
-    
-    .indPremio {
-        font-size: 28px;
-    }
+    padding-top: 5vw;
+  }
+
+  .year {
+    color: #a6341b;
+    font-size: 30px;
+  }
+
+  .disTitulo {
+    margin: 0 0 30px 0;
+    font-size: 52px;
+    color: #593b34;
+  }
+
+  .indPremio {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 1360px) {
-    
-    .distinciones {
+  .distinciones {
+    .puroDiseContainer {
+      width: 270px;
 
-        .puroDiseContainer {
-            width: 270px;
-    
-            .puroDise {
-                width: 190px;
-            }
-        }
-    
-        .selloBuen {
-            width: 270px;
-        }
-    
-        .yearMovi {
-            position: absolute;
-            transform: translate(100px, 0);
-        }
-    
-        .year {
-            color: #A6341B;
-            font-size: 26px;
-        }
-        
-        .disTitulo {
-            margin: 0 0 20px 0;
-            font-size: 46px;
-            color: #593B34;
-        }
-        
-        .indPremio {
-            font-size: 22px;
-        }
-    } 
+      .puroDise {
+        width: 190px;
+      }
+    }
+
+    .selloBuen {
+      width: 270px;
+    }
+
+    .yearMovi {
+      //   position: absolute;
+      //   transform: translate(100px, 0);
+      //   padding-top: 4.5vw;
+    }
+
+    .year {
+      color: #a6341b;
+      font-size: 26px;
+    }
+
+    .disTitulo {
+      margin: 0 0 20px 0;
+      font-size: 46px;
+      color: #593b34;
+    }
+
+    .indPremio {
+      font-size: 22px;
+    }
+  }
 }
 
 @media (max-width: 900px) {
+  .distinciones {
+    .puroDiseContainer {
+      width: 190px;
 
-    .distinciones {
+      .puroDise {
+        width: 110px;
+      }
+    }
 
-        .puroDiseContainer {
-            width: 190px;
-    
-            .puroDise {
-                width: 110px;
-            }
-        }
+    .distinDisplay {
+      gap: 0 26px;
+    }
 
-        .distinDisplay {
-            gap: 0 26px;
-        }
-    
-        .selloBuen {
-            width: 190px;
-        }
-    
-        .yearMovi {
-            position: absolute;
-            transform: translate(100px, 0);
-        }
-    
-        .year {
-            color: #A6341B;
-            font-size: 24px;
-        }
-        
-        .disTitulo {
-            margin: 0 0 10px 0;
-            font-size: 38px;
-            color: #593B34;
-        }
-        
-        .indPremio {
-            font-size: 16px;
-        }
+    .selloBuen {
+      width: 190px;
+    }
 
-        .logoDistin {
-            width: 80px;
-        }
-    } 
+    .yearMovi {
+      //   position: absolute;
+      //   transform: translate(100px, 0);
+      padding-top: 2.2vw;
+    }
+
+    .year {
+      color: #a6341b;
+      font-size: 24px;
+    }
+
+    .disTitulo {
+      margin: 0 0 10px 0;
+      font-size: 38px;
+      color: #593b34;
+    }
+
+    .indPremio {
+      font-size: 16px;
+    }
+
+    .logoDistin {
+      width: 80px;
+    }
+  }
 }
 
 @media (max-width: 540px) {
+  .distinciones {
+    .puroDiseContainer {
+      width: 200px;
 
-    .distinciones {
+      .puroDise {
+        width: 120px;
+      }
+    }
 
-        .puroDiseContainer {
-            width: 200px;
-    
-            .puroDise {
-                width: 120px;
-            }
-        }
+    .distinDisplay {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
 
-        .distinDisplay {
-            display: flex;
-            flex-direction: column;
-            gap: 28px;
-        }
-    
-        .selloBuen {
-            width: 200px;
-        }
-    
-        .yearMovi {
-            position: absolute;
-            transform: translate(100px, -20px);
-        }
-    
-        .year {
-            color: #A6341B;
-            font-size: 22px;
-        }
-        
-        .disTitulo {
-            margin: 0 0 5px 0;
-            font-size: 30px;
-            color: #593B34;
-        }
-        
-        .indPremio {
-            font-size: 18px;
-        }
-    
-        .logoDistin {
-            width: 100px;
-        }
-    } 
+    .selloBuen {
+      width: 200px;
+    }
+
+    // .yearMovi {
+    //   //   position: absolute;
+    //   //   transform: translate(100px, -20px);
+    //   //   padding-top: 2.2vw;
+    // }
+
+    .year {
+      color: #a6341b;
+      font-size: 22px;
+    }
+
+    .disTitulo {
+      margin: 0 0 5px 0;
+      font-size: 30px;
+      color: #593b34;
+    }
+
+    .indPremio {
+      font-size: 18px;
+    }
+
+    .logoDistin {
+      width: 100px;
+    }
+  }
+}
+
+.buenDisContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* alinea horizontalmente */
+  justify-content: center; /* alinea verticalmente */
 }

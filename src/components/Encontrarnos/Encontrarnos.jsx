@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
+// import FlipCard from "react-flipcard";
 const Encontrarnos = () => {
   const [texto, setTexto] = useState("Texto original");
 

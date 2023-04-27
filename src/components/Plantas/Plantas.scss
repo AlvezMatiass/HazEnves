@@ -1,69 +1,87 @@
+.aspect-ratio {
+  height: 100vh;
+}
 .imgFrase {
-    background-image: url('/img/fraseFondo.png');
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: zoom-out;
+  animation-duration: 24s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
 
-    p {
-        font-family: 'Spectral', serif;
-        text-align: center;
-        font-size: 54px;
-        color: #FFFFFF;
-        font-weight: 600;
-        text-shadow: 0px 4px 4px hsl(0, 0%, 5%, 0.25);
-        line-height: 60px;
-      
-      
-        width: 922px;
-    }
+  p {
+    font-family: "Spectral", serif;
+    text-align: center;
+    font-size: 54px;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px hsl(0, 0%, 5%, 0.25);
+    line-height: 60px;
+    width: 922px;
+  }
 }
 
 @media (max-width: 1300px) {
- .imgFrase {
+  .imgFrase {
     height: 85vh;
-    p   {
-        font-size: 44px;
-        width: 860px;
+    p {
+      font-size: 44px;
+      width: 860px;
     }
- }
+  }
 }
 
 @media (max-width: 900px) {
-    .imgFrase {
-        height: 70vh;
+  .imgFrase {
+    height: 70vh;
 
-       p   {
-           font-size: 34px;
-           width: 560px;
-           line-height: 50px;
-           margin: 0 16px;
-       }
+    p {
+      font-size: 34px;
+      width: 560px;
+      line-height: 50px;
+      margin: 0 16px;
     }
+  }
 }
 
 @media (max-width: 600px) {
-    .imgFrase {
-        height: 50vh;
-       p   {
-           font-size: 26px;
-           width: 400px;
-           line-height: 40px;
-           margin: 0 22px;
-       }
+  .imgFrase {
+    height: 50vh;
+    p {
+      font-size: 26px;
+      width: 400px;
+      line-height: 40px;
+      margin: 0 22px;
     }
+  }
+  .aspect-ratio {
+    height: 70vh;
+    margin-top: 15vh;
+  }
 }
 
 @media (max-width: 600px) {
-    .imgFrase {
-       p   {
-           font-size: 22px;
-           width: 300px;
-           line-height: 30px;
-           margin: 0 16px;
-       }
+  .imgFrase {
+    p {
+      font-size: 22px;
+      width: 300px;
+      line-height: 30px;
+      margin: 0 16px;
     }
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
