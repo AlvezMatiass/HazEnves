@@ -2,7 +2,7 @@ import React from "react";
 
 const Nosotros = () => {
   return (
-    <div className="nosotros" id="2">
+    <div className="nosotros" id="nosotros">
       <img src="/img/argentinaprueba.gif" alt="" className="argentinaImg"></img>
       <div className="nosotrosContainer">
         <h4 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">

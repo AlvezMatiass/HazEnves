@@ -22,16 +22,12 @@
 
   .selloBuen {
     width: 310px;
+    margin-top: 3vw;
+    margin-left: 1.5vw;
   }
 
   .yearMovi {
-    // position: absolute;
-    // margin-top: 10px;
-    // margin-left: 104px;
-
-    // transform: translate(80px, 20px);
-
-    padding-top: 5vw;
+    margin-top: 2vw;
   }
 
   .year {
@@ -62,12 +58,11 @@
 
     .selloBuen {
       width: 270px;
+      margin-top: 4vw;
     }
 
     .yearMovi {
-      //   position: absolute;
-      //   transform: translate(100px, 0);
-      //   padding-top: 4.5vw;
+      margin-top: 2vw;
     }
 
     .year {
@@ -103,12 +98,12 @@
 
     .selloBuen {
       width: 190px;
+      margin-top: 3vw;
+      margin-left: 0.5vw;
     }
 
     .yearMovi {
-      //   position: absolute;
-      //   transform: translate(100px, 0);
-      padding-top: 2.2vw;
+      margin-top: 0vw;
     }
 
     .year {
@@ -150,13 +145,8 @@
 
     .selloBuen {
       width: 200px;
+      margin-top: 0vw;
     }
-
-    // .yearMovi {
-    //   //   position: absolute;
-    //   //   transform: translate(100px, -20px);
-    //   //   padding-top: 2.2vw;
-    // }
 
     .year {
       color: #a6341b;
@@ -177,11 +167,4 @@
       width: 100px;
     }
   }
-}
-
-.buenDisContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* alinea horizontalmente */
-  justify-content: center; /* alinea verticalmente */
 }

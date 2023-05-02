@@ -1,7 +1,7 @@
 .nosotros {
   height: 100%;
   width: 100%;
-
+  margin-bottom: 7.5vh;
   display: flex;
   justify-content: center;
 
@@ -45,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px;
+  margin-inline: 10%;
 
   .tsegundo {
     width: 1300px;
@@ -95,6 +95,7 @@
   }
 
   .textoRandom {
+    // margin-top: auto;
     p {
       font-size: 28px;
     }
@@ -144,7 +145,7 @@
   }
 
   .textoRandom {
-    margin: 40px 16px;
+    // margin: 40px 16px;
     p {
       font-size: 22px;
     }
@@ -213,7 +214,7 @@
       height: 346px;
       h4 {
         font-size: 30px;
-        margin: 32px 0 0 0;
+        margin: 50px 0 0 0;
       }
 
       p {
@@ -228,7 +229,7 @@
   .textoRandom {
     p {
       font-size: 16px;
-      margin: 16px 0;
+      // margin: auto;
     }
   }
 }
@@ -255,8 +256,7 @@
   .textoRandom {
     p {
       font-size: 16px;
-      margin: 16px 0;
+      // margin: auto;
     }
   }
 }
-

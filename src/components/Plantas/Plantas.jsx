@@ -1,5 +1,5 @@
 import React from "react";
-import { ParallaxBanner } from "react-scroll-parallax";
+import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 const Plantas = () => {
   return (
     <ParallaxBanner
@@ -10,6 +10,9 @@ const Plantas = () => {
           opacity: [0.7, 1],
           scale: [1.05, 1, "easeOutCubic"],
           shouldAlwaysCompleteAnimation: true,
+          style: {
+            backgroundPosition: "center right",
+          },
         },
         {
           speed: -10,
@@ -26,7 +29,7 @@ const Plantas = () => {
           ),
         },
       ]}
-      className="aspect-ratio"
+      className="container-plantas"
     />
   );
 };

@@ -1,14 +1,13 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const handleDragStart = (e) => e.preventDefault();
 const style = {
-  margin: "auto",
-  maxWidth: "400px",
-  maxHeight: "488px",
+  marginTop: "15px",
+  maxWidth: "80%",
+  maxHeight: "399px",
+  Height: "80%",
 };
 const items = [
   <div>
@@ -54,7 +53,7 @@ const items = [
     </p>
     <img
       className="imgCarrousel"
-      src="/img/ProcesoCreativo4v.jpg"
+      src="/img/ProcesoCreativo4.png"
       onDragStart={handleDragStart}
       role="presentation"
       style={style}
@@ -74,9 +73,6 @@ const items = [
   </div>,
 ];
 const Proceso = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   const responsive = {
     0: {
       items: 1,
@@ -84,8 +80,8 @@ const Proceso = () => {
     },
   };
   return (
-    <>
-      <div className="proceso show-proceso" id="proceso">
+    <div id="proceso">
+      <div className="proceso show-proceso">
         <div className="flechas">
           <p className="titulo">Proceso Creativo</p>
           <img src="/img/Flechas.png" alt="" className="logoFlecha" />
@@ -166,7 +162,7 @@ const Proceso = () => {
           controlStrategy="responsive"
         />
       </div>
-    </>
+    </div>
   );
 };
 

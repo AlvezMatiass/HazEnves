@@ -3,7 +3,7 @@
   top: auto;
   min-height: 120vh;
   width: 92%;
-  margin: auto;
+  margin: 7.5vh auto;
 
   p {
     text-align: center;
@@ -84,11 +84,11 @@
   height: 600px;
   div {
     text-align: center;
+    margin: auto;
   }
   li {
-    margin: auto;
-    width: 500px;
-    height: 550px;
+    max-width: 500px;
+    max-height: 550px;
     overflow: hidden;
     aspect-ratio: 400/488;
   }
@@ -166,13 +166,19 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1500px) {
+  .proceso {
+    min-height: 96vh;
+  }
+}
+
+@media screen and (max-width: 1350px) {
   .proceso {
     min-height: 85vh;
   }
 }
 @media screen and (max-width: 1100px) {
   .proceso {
-    min-height: 80vh;
+    min-height: 72vh;
   }
 }

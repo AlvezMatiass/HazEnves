@@ -1,17 +1,61 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import CardFlip from "react-card-flip";
 
-// import FlipCard from "react-flipcard";
 const Encontrarnos = () => {
-  const [texto, setTexto] = useState("Texto original");
+  const backgroundImages = [
+    "/img/Encontranos1.jpg",
+    "/img/Encontranos1Blur.jpg",
+    "/img/Encontranos2.jpg",
+    "/img/Encontranos2Blur.jpg",
+    "/img/Encontranos3.jpg",
+    "/img/Encontranos3Blur.jpg",
+    "/img/Encontranos4.jpg",
+    "/img/Encontranos4Blur.jpg",
+  ];
+  const [isFlipped1, setIsFlipped1] = useState(false);
+  const [isFlipped2, setIsFlipped2] = useState(false);
+  const [isFlipped3, setIsFlipped3] = useState(false);
+  const [isFlipped4, setIsFlipped4] = useState(false);
 
-  const handleClick = () => {
-    setTexto("Direccion: Salame 3 entre jose antonio 20 y jose julio 1200");
-    document.querySelector(".imgFondoTexto").classList.toggle("clicked");
+  const handleMouseEnter = (cardNumber) => {
+    switch (cardNumber) {
+      case 1:
+        setIsFlipped1(true);
+        break;
+      case 2:
+        setIsFlipped2(true);
+        break;
+      case 3:
+        setIsFlipped3(true);
+        break;
+      case 4:
+        setIsFlipped4(true);
+        break;
+      default:
+        break;
+    }
   };
 
+  const handleMouseLeave = (cardNumber) => {
+    switch (cardNumber) {
+      case 1:
+        setIsFlipped1(false);
+        break;
+      case 2:
+        setIsFlipped2(false);
+        break;
+      case 3:
+        setIsFlipped3(false);
+        break;
+      case 4:
+        setIsFlipped4(false);
+        break;
+      default:
+        break;
+    }
+  };
   return (
-    <div id="4" className="encontrarnos">
+    <div className="encontrarnos" id="servicios">
       <div className="encontrarnosContainer">
         <div className="encoTituloContainer">
           <p className="encoTitulo">Podemos Encontrarnos...</p>
@@ -19,18 +63,191 @@ const Encontrarnos = () => {
         <div className="imgContainer">
           <img src="./img/ropaRama.png" alt="" className="ramaImg" />
           <div className="cuatroImgContainer">
-            <div className="pruebaFondoNashe" onClick={handleClick}>
-              <p className="imgFondoTexto">{texto}</p>
-            </div>
-            <div className="pruebaFondoNashe">
-              <p>Reciclando tu prenda</p>
-            </div>
-            <div className="pruebaFondoNashe">
-              <p>Reciclando tu prenda</p>
-            </div>
-            <div className="pruebaFondoNashe">
-              <p>Reciclando tu prenda</p>
-            </div>
+            <CardFlip isFlipped={isFlipped1} flipDirection="horizontal">
+              <div
+                onClick={() => setIsFlipped1(!isFlipped1)}
+                onMouseEnter={() => handleMouseEnter(1)}
+                className="card"
+                style={{ backgroundImage: `url(${backgroundImages[0]})` }}
+              >
+                <div>
+                  <p>
+                    <strong>Ferias y Eventos</strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                onClick={() => setIsFlipped1(!isFlipped1)}
+                className="card-bg"
+                onMouseLeave={() => handleMouseLeave(1)}
+              >
+                <div
+                  className="card-flip-back-image"
+                  style={{ backgroundImage: `url(${backgroundImages[1]})` }}
+                >
+                  <div className="card-flip-back-content">
+                    <p className="titulo-back">
+                      <strong>Ferias y Eventos</strong>
+                    </p>
+                    <p className="texto-back">
+                      Consulta cuando <br />
+                      estamos en
+                      <br /> movimiento
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardFlip>
+            <CardFlip isFlipped={isFlipped2} flipDirection="horizontal">
+              <div
+                onClick={() => setIsFlipped1(!isFlipped2)}
+                onMouseEnter={() => handleMouseEnter(2)}
+                className="card"
+                style={{ backgroundImage: `url(${backgroundImages[2]})` }}
+              >
+                <div>
+                  <p>
+                    <strong>
+                      Diseñando tu prenda{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-recycle"
+                        width="22"
+                        height="22"
+                        viewBox="0 -3.1 24 24"
+                        stroke-width="1.8"
+                        stroke="#00b341"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 17l-2 2l2 2m-2 -2h9a2 2 0 0 0 1.75 -2.75l-.55 -1" />
+                        <path
+                          d="M12 17l-2 2l2 2m-2 -2h9a2 2 0 0 0 1.75 -2.75l-.55 -1"
+                          transform="rotate(120 12 13)"
+                        />
+                        <path
+                          d="M12 17l-2 2l2 2m-2 -2h9a2 2 0 0 0 1.75 -2.75l-.55 -1"
+                          transform="rotate(240 12 13)"
+                        />
+                      </svg>
+                    </strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                onClick={() => setIsFlipped1(!isFlipped2)}
+                className="card-bg"
+                onMouseLeave={() => handleMouseLeave(2)}
+              >
+                <div
+                  className="card-flip-back-image"
+                  style={{ backgroundImage: `url(${backgroundImages[3]})` }}
+                >
+                  <div className="card-flip-back-content">
+                    <p className="titulo-back">
+                      <strong>Diseñando tu prenda</strong>
+                    </p>
+                    <p className="texto-back">
+                      Utilizando nuestras <br /> improntas vegetales <br />
+                      revalorizamos <br />
+                      tu prenda usada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardFlip>
+            <CardFlip isFlipped={isFlipped3} flipDirection="horizontal">
+              <div
+                onClick={() => setIsFlipped1(!isFlipped3)}
+                onMouseEnter={() => handleMouseEnter(3)}
+                className="card"
+                style={{ backgroundImage: `url(${backgroundImages[4]})` }}
+              >
+                <div>
+                  <p>
+                    <strong>Diseño de Autoras</strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                onClick={() => setIsFlipped1(!isFlipped3)}
+                className="card-bg"
+                onMouseLeave={() => handleMouseLeave(3)}
+              >
+                <div
+                  className="card-flip-back-image"
+                  style={{ backgroundImage: `url(${backgroundImages[5]})` }}
+                >
+                  <div className="card-flip-back-content">
+                    <p className="titulo-back">
+                      <strong>Diseño de Autoras</strong>
+                    </p>
+                    <p className="texto-back">
+                      San Lorenzo 351 <br />
+                      Ciudad Mendoza <br />
+                      Consultar horarios de <br />
+                      atención.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardFlip>
+            <CardFlip isFlipped={isFlipped4} flipDirection="horizontal">
+              <div
+                onClick={() => setIsFlipped1(!isFlipped4)}
+                onMouseEnter={() => handleMouseEnter(4)}
+                className="card"
+                style={{ backgroundImage: `url(${backgroundImages[6]})` }}
+              >
+                <div>
+                  <p>
+                    <strong>Tienda Virtual </strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                onClick={() => setIsFlipped1(!isFlipped4)}
+                className="card-bg"
+                onMouseLeave={() => handleMouseLeave(4)}
+              >
+                <div
+                  className="card-flip-back-image"
+                  style={{ backgroundImage: `url(${backgroundImages[7]})` }}
+                >
+                  <div className="card-flip-back-content">
+                    <a href="">
+                      <p className="titulo-back">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-link"
+                          width="24"
+                          height="22"
+                          viewBox="0 -3 24 24"
+                          stroke-width="1.5"
+                          stroke="#ffffff"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                          <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                        </svg>
+
+                        <strong> Tienda Virtual</strong>
+                      </p>
+                    </a>
+                    <p className="texto-back">
+                      Consultá los modelos
+                      <br /> disponibles o podemos <br />
+                      conectarnos por mail.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardFlip>
           </div>
         </div>
       </div>
