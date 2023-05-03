@@ -4,11 +4,6 @@ const Inicio = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const inputRef = useRef(null);
 
-  const handleMenuOptionClick = () => {
-    console.log("entro");
-    setMenuOpen(false);
-    inputRef.current.checked = false;
-  };
   const toggleMenu = () => {
     setTimeout(() => {
       setMenuOpen(!menuOpen);
@@ -16,13 +11,13 @@ const Inicio = () => {
   };
   useEffect(() => {
     if (menuOpen) {
-      const timer = setTimeout(() => {
+      setTimeout(() => {
         setMenuOpen(false);
         inputRef.current.checked = false;
-      }, 2500);
-      return () => clearTimeout(timer);
+      }, 3000);
     }
   }, [menuOpen]);
+
   return (
     <div>
       <header className="header">
@@ -48,29 +43,20 @@ const Inicio = () => {
         </label>
         <div className={`menu`}>
           <li>
-            <a href="#inicio" onMouseDown={handleMenuOptionClick}>
-              Inicio
-            </a>
+            <a href="#inicio">Inicio</a>
           </li>
           <li>
-            <a href="#nosotros" onMouseDown={handleMenuOptionClick}>
-              Sobre Nosotros
-            </a>
+            <a href="#nosotros">Sobre Nosotros</a>
           </li>
           <li>
-            <a href="#proceso" onMouseDown={handleMenuOptionClick}>
-              Proceso
-            </a>
+            <a href="#proceso">Proceso</a>
           </li>
           <li>
-            <a href="#servicios" onMouseDown={handleMenuOptionClick}>
-              Nuestros Servicios
-            </a>
+            <a href="#servicios">Nuestros Servicios</a>
           </li>
         </div>
       </header>
 
-      {/* <HamburguerMenu /> */}
       <div className="img-container" id="inicio">
         <img src=".\img\logo.png" alt="logo" className="logo-inicio" />
         <p className="texto-inicio">

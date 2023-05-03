@@ -5,8 +5,9 @@ import "react-alice-carousel/lib/alice-carousel.css";
 const handleDragStart = (e) => e.preventDefault();
 const style = {
   marginTop: "15px",
-  maxWidth: "80%",
-  maxHeight: "399px",
+  // Width: "80%",
+  // maxWidth: "430px",
+  maxHeight: "500px",
   Height: "80%",
 };
 const items = [
@@ -53,7 +54,7 @@ const items = [
     </p>
     <img
       className="imgCarrousel"
-      src="/img/ProcesoCreativo4.png"
+      src="/img/ProcesoCreativo4v.jpg"
       onDragStart={handleDragStart}
       role="presentation"
       style={style}
@@ -78,6 +79,7 @@ const Proceso = () => {
       items: 1,
       itemsFit: "contain",
     },
+    // 700: { items: 2 },
   };
   return (
     <div id="proceso">
@@ -150,6 +152,7 @@ const Proceso = () => {
           autoPlayInterval={2800}
           animationDuration={1000}
           autoHeight
+          autoWidth
           mouseTracking
           touchTracking
           disableButtonsControls

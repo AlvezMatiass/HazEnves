@@ -56,7 +56,7 @@
 
 .logo-inicio {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   height: 34%;
   top: 21.9vh;
   left: 20.9vh;
@@ -69,7 +69,7 @@
 }
 .texto-inicio {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   width: 50vw;
   font-family: "Spectral", serif;
   color: #e8e5d2;
@@ -93,7 +93,6 @@
   right: 100px;
   top: 0;
   z-index: 3;
-
   margin: 20px 0 0 20px;
 
   img {
@@ -191,20 +190,23 @@
     }
     .burger {
       display: block;
+      // div {
+      //   opacity: 1;
+      // }
     }
     .open {
       position: relative;
       display: block;
-      z-index: 5;
+      animation: fade-in 1s ease-out;
       li {
-        margin-left: 20vw;
+        margin-left: 15vw;
         margin-top: 3vw;
         width: 100vw;
         a {
           font-size: 20px;
           color: #541e0a;
           background-color: #e8e5d2;
-          opacity: 0.7;
+          opacity: 0.9;
           padding-inline: 3vw;
           padding-top: 1vw;
           padding-bottom: 1vw;
@@ -226,7 +228,14 @@
     }
   }
 }
-
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media (max-width: 560px) {
   .header {
     gap: 0 18px;

@@ -26,6 +26,7 @@
         row-gap: 5vh;
         column-gap: 5vw;
         align-content: center;
+        margin-inline: auto;
 
         .react-card-flip {
           position: relative;
@@ -72,7 +73,7 @@
     text-align: center;
     flex-wrap: nowrap;
     font-size: 22px;
-    top: calc(50% - 0.5em);
+    top: calc(65% - 0.5em);
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -141,38 +142,38 @@
     .imgContainer
     .cuatroImgContainer
     .react-card-flip {
-    width: 37vw;
+    width: 43vw;
     aspect-ratio: 3/4;
     min-width: 0px;
   }
 }
-@media (max-width: 522px) {
-  .encontrarnos {
-    display: block;
-    height: 215vh;
-  }
-  .react-card-front,
-  .react-card-back {
-    p {
-      width: 60%;
-    }
-  }
-  .encoTituloContainer {
-    margin-inline: 3vw;
-  }
-  .encontrarnos .encontrarnosContainer .imgContainer .cuatroImgContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .react-card-flip {
-      width: 75vw;
-      min-height: 48vh;
-      aspect-ratio: 3/4;
-      min-width: 0px;
-    }
-  }
-  .encontrarnos .encontrarnosContainer .imgContainer {
-    display: block;
-  }
-}
+// @media (max-width: 522px) {
+//   .encontrarnos {
+//     display: block;
+//     height: 215vh;
+//   }
+//   .react-card-front,
+//   .react-card-back {
+//     p {
+//       width: 60%;
+//     }
+//   }
+//   .encoTituloContainer {
+//     margin-inline: 3vw;
+//   }
+//   .encontrarnos .encontrarnosContainer .imgContainer .cuatroImgContainer {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     .react-card-flip {
+//       width: 75vw;
+//       min-height: 48vh;
+//       aspect-ratio: 3/4;
+//       min-width: 0px;
+//     }
+//   }
+//   .encontrarnos .encontrarnosContainer .imgContainer {
+//     display: block;
+//   }
+// }
