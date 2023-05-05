@@ -8,7 +8,7 @@ const Footer = () => {
         <p>Hecho a mano con amor.</p>
         <div className="iconos">
           <a
-            href="https://www.instagram.com/hazenves_/"
+            href="https://www.facebook.com/ecobypupe/"
             target="_blank"
             rel="noopener noreferrer"
           >

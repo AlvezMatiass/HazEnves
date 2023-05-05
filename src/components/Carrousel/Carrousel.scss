@@ -1,12 +1,30 @@
 .carrousel {
-  max-height: 90vh;
   width: 100%;
   background-color: #e8e5d2;
+  margin: 4vh 0;
   img {
     transition: transform 0.3s ease-out;
   }
   img:hover {
     transform: scale(1.08);
     margin: 2rem;
+  }
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  span {
+    color: #541e0a;
+    font-size: 50px;
+  }
+  .alice-carousel__next-btn-wrapper,
+  .alice-carousel__prev-btn-wrapper {
+    margin: -0vh 10vw;
+  }
+}
+
+@media (max-width: 479px) {
+  .carrousel {
+    aspect-ratio: 4/5;
   }
 }

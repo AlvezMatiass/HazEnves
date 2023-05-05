@@ -14,7 +14,7 @@ const Inicio = () => {
       setTimeout(() => {
         setMenuOpen(false);
         inputRef.current.checked = false;
-      }, 3000);
+      }, 5000);
     }
   }, [menuOpen]);
 
@@ -72,7 +72,10 @@ const Inicio = () => {
       </div>
 
       <div className="whatsapp">
-        <a href="">
+        <a
+          href="https://api.whatsapp.com/send?phone=5492615606919&text=Estoy interesado en conocer sus productos"
+          target="_blank"
+        >
           <img src=".\img\whatsappverde.png" alt=""></img>
         </a>
       </div>

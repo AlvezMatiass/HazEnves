@@ -63,9 +63,98 @@ const Encontrarnos = () => {
         <div className="imgContainer">
           <img src="./img/ropaRama.png" alt="" className="ramaImg" />
           <div className="cuatroImgContainer">
+            <CardFlip isFlipped={isFlipped3} flipDirection="horizontal">
+              <div
+                onMouseDown={() => handleMouseEnter(3)}
+                onMouseEnter={() => handleMouseEnter(3)}
+                className="card"
+                style={{ backgroundImage: `url(${backgroundImages[4]})` }}
+              >
+                <div>
+                  <p>
+                    <strong>Diseño de Autoras</strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                onMouseDown={() => handleMouseLeave(3)}
+                className="card-bg"
+                onMouseLeave={() => handleMouseLeave(3)}
+              >
+                <div
+                  className="card-flip-back-image"
+                  style={{ backgroundImage: `url(${backgroundImages[5]})` }}
+                >
+                  <div className="card-flip-back-content">
+                    <p className="titulo-back">
+                      <strong>Diseño de Autoras</strong>
+                    </p>
+                    <p className="texto-back">
+                      San Lorenzo 351 <br />
+                      Ciudad Mendoza <br />
+                      Consultar horarios de <br />
+                      atención.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardFlip>
+            <CardFlip isFlipped={isFlipped4} flipDirection="horizontal">
+              <div
+                onMouseDown={() => handleMouseEnter(4)}
+                onMouseEnter={() => handleMouseEnter(4)}
+                className="card"
+                style={{ backgroundImage: `url(${backgroundImages[6]})` }}
+              >
+                <div>
+                  <p>
+                    <strong>Tienda Virtual </strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                onMouseDown={() => handleMouseLeave(4)}
+                className="card-bg"
+                onMouseLeave={() => handleMouseLeave(4)}
+              >
+                <div
+                  className="card-flip-back-image"
+                  style={{ backgroundImage: `url(${backgroundImages[7]})` }}
+                >
+                  <div className="card-flip-back-content">
+                    <a href="https://wa.me/c/5492615606919" target="_blank">
+                      <p className="titulo-back">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-link"
+                          width="24"
+                          height="22"
+                          viewBox="0 -3 24 24"
+                          stroke-width="1.5"
+                          stroke="#ffffff"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                          <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                        </svg>
+
+                        <strong>{"\u00a0\u00a0"}Tienda Virtual</strong>
+                      </p>
+                    </a>
+                    <p className="texto-back">
+                      Consultá los modelos
+                      <br /> disponibles en el link.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardFlip>
             <CardFlip isFlipped={isFlipped1} flipDirection="horizontal">
               <div
-                onClick={() => setIsFlipped1(!isFlipped1)}
+                onMouseDown={() => handleMouseEnter(1)}
                 onMouseEnter={() => handleMouseEnter(1)}
                 className="card"
                 style={{ backgroundImage: `url(${backgroundImages[0]})` }}
@@ -77,7 +166,7 @@ const Encontrarnos = () => {
                 </div>
               </div>
               <div
-                onClick={() => setIsFlipped1(!isFlipped1)}
+                onMouseDown={() => handleMouseLeave(1)}
                 className="card-bg"
                 onMouseLeave={() => handleMouseLeave(1)}
               >
@@ -90,9 +179,8 @@ const Encontrarnos = () => {
                       <strong>Ferias y Eventos</strong>
                     </p>
                     <p className="texto-back">
-                      Consulta cuando <br />
-                      estamos en
-                      <br /> movimiento
+                      Consultá nuestras próximas participaciones nacionales e
+                      internacionales.
                     </p>
                   </div>
                 </div>
@@ -100,7 +188,7 @@ const Encontrarnos = () => {
             </CardFlip>
             <CardFlip isFlipped={isFlipped2} flipDirection="horizontal">
               <div
-                onClick={() => setIsFlipped1(!isFlipped2)}
+                onMouseDown={() => handleMouseEnter(2)}
                 onMouseEnter={() => handleMouseEnter(2)}
                 className="card"
                 style={{ backgroundImage: `url(${backgroundImages[2]})` }}
@@ -108,7 +196,7 @@ const Encontrarnos = () => {
                 <div>
                   <p>
                     <strong>
-                      Diseñando tu prenda{" "}
+                      Reciclando{" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="icon icon-tabler icon-tabler-recycle"
@@ -137,7 +225,7 @@ const Encontrarnos = () => {
                 </div>
               </div>
               <div
-                onClick={() => setIsFlipped1(!isFlipped2)}
+                onMouseDown={() => handleMouseLeave(2)}
                 className="card-bg"
                 onMouseLeave={() => handleMouseLeave(2)}
               >
@@ -150,99 +238,8 @@ const Encontrarnos = () => {
                       <strong>Diseñando tu prenda</strong>
                     </p>
                     <p className="texto-back">
-                      Utilizando nuestras <br /> improntas vegetales <br />
-                      revalorizamos <br />
-                      tu prenda usada.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </CardFlip>
-            <CardFlip isFlipped={isFlipped3} flipDirection="horizontal">
-              <div
-                onClick={() => setIsFlipped1(!isFlipped3)}
-                onMouseEnter={() => handleMouseEnter(3)}
-                className="card"
-                style={{ backgroundImage: `url(${backgroundImages[4]})` }}
-              >
-                <div>
-                  <p>
-                    <strong>Diseño de Autoras</strong>
-                  </p>
-                </div>
-              </div>
-              <div
-                onClick={() => setIsFlipped1(!isFlipped3)}
-                className="card-bg"
-                onMouseLeave={() => handleMouseLeave(3)}
-              >
-                <div
-                  className="card-flip-back-image"
-                  style={{ backgroundImage: `url(${backgroundImages[5]})` }}
-                >
-                  <div className="card-flip-back-content">
-                    <p className="titulo-back">
-                      <strong>Diseño de Autoras</strong>
-                    </p>
-                    <p className="texto-back">
-                      San Lorenzo 351 <br />
-                      Ciudad Mendoza <br />
-                      Consultar horarios de <br />
-                      atención.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </CardFlip>
-            <CardFlip isFlipped={isFlipped4} flipDirection="horizontal">
-              <div
-                onClick={() => setIsFlipped1(!isFlipped4)}
-                onMouseEnter={() => handleMouseEnter(4)}
-                className="card"
-                style={{ backgroundImage: `url(${backgroundImages[6]})` }}
-              >
-                <div>
-                  <p>
-                    <strong>Tienda Virtual </strong>
-                  </p>
-                </div>
-              </div>
-              <div
-                onClick={() => setIsFlipped1(!isFlipped4)}
-                className="card-bg"
-                onMouseLeave={() => handleMouseLeave(4)}
-              >
-                <div
-                  className="card-flip-back-image"
-                  style={{ backgroundImage: `url(${backgroundImages[7]})` }}
-                >
-                  <div className="card-flip-back-content">
-                    <a href="">
-                      <p className="titulo-back">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="icon icon-tabler icon-tabler-link"
-                          width="24"
-                          height="22"
-                          viewBox="0 -3 24 24"
-                          stroke-width="1.5"
-                          stroke="#ffffff"
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-                          <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-                        </svg>
-
-                        <strong> Tienda Virtual</strong>
-                      </p>
-                    </a>
-                    <p className="texto-back">
-                      Consultá los modelos
-                      <br /> disponibles o podemos <br />
-                      conectarnos por mail.
+                      Reciclá, reusá y revalorizá tus prendas preferidas
+                      utilizando nuestra impronta natural.
                     </p>
                   </div>
                 </div>

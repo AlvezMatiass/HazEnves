@@ -1,5 +1,7 @@
 .encontrarnos {
-  height: 100vh;
+  // height: 100vh;
+  width: 95vw;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +63,7 @@
     text-align: center;
     flex-wrap: nowrap;
     font-size: 22px;
-    top: calc(18% - 0.5em);
+    top: calc(47% - 0.5em);
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -119,8 +121,16 @@
   opacity: 0.3;
 }
 
-@media (max-width: 1250px) {
-  .encontrarnos.encontrarnosContainer.imgContainer .cuatroImgContainer {
+@media (max-width: 1300px) {
+  .imgContainer {
+    width: 95vw;
+  }
+  .react-card-flip {
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 150px;
+  }
+  .encontrarnos .encontrarnosContainer .imgContainer .cuatroImgContainer {
     column-gap: 2vw;
     row-gap: 5vh;
   }
@@ -130,6 +140,15 @@
     .cuatroImgContainer
     .react-card-flip {
     height: 37.5vh;
+  }
+  .ramaImg {
+    margin: 0 3vw 0 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .encoTitulo {
+    margin-bottom: 2vh;
   }
   .ramaImg {
     display: none;
@@ -145,35 +164,48 @@
     width: 43vw;
     aspect-ratio: 3/4;
     min-width: 0px;
+    strong {
+      font-size: 20px;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+  // .encontrarnos {
+  //   margin-top: 40vh;
+  // }
+}
+@media (min-width: 400px) {
+  .encontrarnos {
+    height: 100vh;
   }
 }
-// @media (max-width: 522px) {
-//   .encontrarnos {
-//     display: block;
-//     height: 215vh;
-//   }
-//   .react-card-front,
-//   .react-card-back {
-//     p {
-//       width: 60%;
-//     }
-//   }
-//   .encoTituloContainer {
-//     margin-inline: 3vw;
-//   }
-//   .encontrarnos .encontrarnosContainer .imgContainer .cuatroImgContainer {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     .react-card-flip {
-//       width: 75vw;
-//       min-height: 48vh;
-//       aspect-ratio: 3/4;
-//       min-width: 0px;
-//     }
-//   }
-//   .encontrarnos .encontrarnosContainer .imgContainer {
-//     display: block;
-//   }
-// }
+@media (max-width: 400px) {
+  .encontrarnos {
+    display: block;
+  }
+  .react-card-front,
+  .react-card-back {
+    p {
+      width: 60%;
+    }
+  }
+  .encoTituloContainer {
+    margin-inline: 3vw;
+  }
+  .encontrarnos .encontrarnosContainer .imgContainer .cuatroImgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .react-card-flip {
+      width: 75vw;
+      min-height: 48vh;
+      aspect-ratio: 3/4;
+      min-width: 0px;
+    }
+  }
+  .encontrarnos .encontrarnosContainer .imgContainer {
+    display: block;
+  }
+}

@@ -5,10 +5,9 @@ import "react-alice-carousel/lib/alice-carousel.css";
 const handleDragStart = (e) => e.preventDefault();
 const style = {
   marginTop: "15px",
-  // Width: "80%",
-  // maxWidth: "430px",
-  maxHeight: "500px",
-  Height: "80%",
+  maxWidth: "80vw",
+  maxHeight: "60vh",
+  backgroundSize: "cover",
 };
 const items = [
   <div>
@@ -151,8 +150,8 @@ const Proceso = () => {
           autoPlayStrategy="default"
           autoPlayInterval={2800}
           animationDuration={1000}
-          autoHeight
-          autoWidth
+          // autoHeight
+          // autoWidth
           mouseTracking
           touchTracking
           disableButtonsControls

@@ -1,7 +1,9 @@
 .distinciones {
   font-family: "Spectral", serif;
   text-align: center;
-  margin: 60px 0;
+  margin: 60px auto;
+  max-width: 100%;
+  overflow: hidden;
 
   .distinDisplay {
     display: flex;
@@ -61,9 +63,10 @@
       margin-top: 4vw;
     }
 
-    .yearMovi {
-      margin-top: 2vw;
-    }
+    // .yearMovi {
+    //   padding-left: 11vw;
+    //   width: 50%;
+    // }
 
     .year {
       color: #a6341b;
@@ -147,7 +150,6 @@
       width: 200px;
       margin-top: 0vw;
     }
-
     .year {
       color: #a6341b;
       font-size: 22px;

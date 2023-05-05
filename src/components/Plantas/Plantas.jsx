@@ -1,17 +1,18 @@
 import React from "react";
-import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
+import { ParallaxBanner } from "react-scroll-parallax";
 const Plantas = () => {
   return (
     <ParallaxBanner
       layers={[
         {
           image: "/img/fraseFondo.png",
-          speed: -30,
+          speed: 10,
           opacity: [0.7, 1],
           scale: [1.05, 1, "easeOutCubic"],
           shouldAlwaysCompleteAnimation: true,
           style: {
             backgroundPosition: "center right",
+            backgroundSize: "cover",
           },
         },
         {

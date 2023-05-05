@@ -89,7 +89,7 @@ const Carrousel = () => {
         animationDuration={1000}
         mouseTracking
         touchTracking
-        disableButtonsControls
+        // disableButtonsControls
         fadeOutAnimation={true}
         mouseDragEnabled={true}
         disableDotsControls={true}
