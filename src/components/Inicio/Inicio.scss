@@ -1,11 +1,9 @@
 .header {
   position: fixed;
-
   display: flex;
   align-items: center;
   justify-content: center;
 
-  gap: 0 110px;
   height: 100px;
   width: 100%;
   color: #f1efef;
@@ -17,6 +15,17 @@
     rgba(27, 46, 56, 0) 100%
   );
   z-index: 2;
+  .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    li {
+      margin-inline: 5vw;
+    }
+  }
+  .burger {
+    display: none;
+  }
 }
 
 .img-container {
@@ -47,7 +56,7 @@
 
 .logo-inicio {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   height: 34%;
   top: 21.9vh;
   left: 20.9vh;
@@ -60,7 +69,7 @@
 }
 .texto-inicio {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   width: 50vw;
   font-family: "Spectral", serif;
   color: #e8e5d2;
@@ -84,7 +93,6 @@
   right: 100px;
   top: 0;
   z-index: 3;
-
   margin: 20px 0 0 20px;
 
   img {
@@ -93,6 +101,9 @@
     color: #e9e1d6;
     mix-blend-mode: difference;
   }
+}
+.close {
+  display: none;
 }
 @keyframes fade {
   0% {
@@ -148,9 +159,6 @@
 
 @media (max-width: 1300px) {
   .header {
-    gap: 0 70px;
-    height: 100px;
-    width: 100%;
     font-size: 20px;
   }
 }
@@ -165,16 +173,52 @@
       width: 52px;
     }
   }
+  .fotoI-2 {
+    object-position: 65%;
+  }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .header {
     gap: 0 40px;
     height: 92px;
     width: 100%;
     font-size: 18px;
+    justify-content: left;
+    .menu {
+      display: none;
+    }
+    .burger {
+      display: block;
+      // div {
+      //   opacity: 1;
+      // }
+    }
+    .open {
+      position: relative;
+      display: block;
+      animation: fade-in 1s ease-out;
+      li {
+        margin-left: 15vw;
+        margin-top: 3vw;
+        width: 100vw;
+        a {
+          font-size: 20px;
+          color: #541e0a;
+          background-color: #e8e5d2;
+          opacity: 0.9;
+          padding-inline: 3vw;
+          padding-top: 1vw;
+          padding-bottom: 1vw;
+          border-radius: 5px;
+        }
+      }
+    }
   }
-
+  .texto-inicio {
+    font-size: 42px;
+    margin-top: 8vh;
+  }
   .whatsapp {
     right: 70px;
     margin: 20px 0 0 20px;
@@ -184,7 +228,14 @@
     }
   }
 }
-
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media (max-width: 560px) {
   .header {
     gap: 0 18px;
@@ -238,4 +289,69 @@
     width: 100%;
     font-size: 10px;
   }
+}
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  margin-top: 3vh;
+  margin-left: 5vh;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+.burger.menu.open {
+  margin-left: 5vw;
 }

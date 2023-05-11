@@ -2,7 +2,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const handleDragStart = (e) => e.preventDefault();
-const style = { margin: "6vw", width: "80%" };
+const style = { margin: "6vw", width: "90%" };
 const items = [
   <img
     className="imgCarrousel"
@@ -87,12 +87,8 @@ const Carrousel = () => {
         autoPlayStrategy="default"
         autoPlayInterval={2200}
         animationDuration={1000}
-        animationType="fadeout"
-        // autoWidth
-        // autoHeight
         mouseTracking
         touchTracking
-        disableButtonsControls
         fadeOutAnimation={true}
         mouseDragEnabled={true}
         disableDotsControls={true}

@@ -6,10 +6,14 @@ const Plantas = () => {
       layers={[
         {
           image: "/img/fraseFondo.png",
-          speed: -30,
+          speed: 10,
           opacity: [0.7, 1],
           scale: [1.05, 1, "easeOutCubic"],
           shouldAlwaysCompleteAnimation: true,
+          style: {
+            backgroundPosition: "center right",
+            backgroundSize: "cover",
+          },
         },
         {
           speed: -10,
@@ -26,7 +30,7 @@ const Plantas = () => {
           ),
         },
       ]}
-      className="aspect-ratio"
+      className="container-plantas"
     />
   );
 };

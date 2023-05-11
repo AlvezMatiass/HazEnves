@@ -1,14 +1,13 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const handleDragStart = (e) => e.preventDefault();
 const style = {
-  margin: "auto",
-  maxWidth: "400px",
-  maxHeight: "488px",
+  marginTop: "15px",
+  maxWidth: "80vw",
+  maxHeight: "60vh",
+  backgroundSize: "cover",
 };
 const items = [
   <div>
@@ -74,9 +73,6 @@ const items = [
   </div>,
 ];
 const Proceso = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   const responsive = {
     0: {
       items: 1,
@@ -84,8 +80,8 @@ const Proceso = () => {
     },
   };
   return (
-    <>
-      <div className="proceso show-proceso" id="proceso">
+    <div id="proceso">
+      <div className="proceso show-proceso">
         <div className="flechas">
           <p className="titulo">Proceso Creativo</p>
           <img src="/img/Flechas.png" alt="" className="logoFlecha" />
@@ -149,14 +145,11 @@ const Proceso = () => {
       <div className="carrousel-proceso show-carrousel">
         <p className="titulo">Proceso Creativo</p>
         <AliceCarousel
-          autoPlay
           autoPlayStrategy="default"
           autoPlayInterval={2800}
           animationDuration={1000}
-          autoHeight
           mouseTracking
           touchTracking
-          disableButtonsControls
           fadeOutAnimation={true}
           mouseDragEnabled={true}
           disableDotsControls={true}
@@ -166,7 +159,7 @@ const Proceso = () => {
           controlStrategy="responsive"
         />
       </div>
-    </>
+    </div>
   );
 };
 

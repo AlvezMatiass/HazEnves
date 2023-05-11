@@ -1,29 +1,17 @@
 import "./App.css";
 import { ParallaxProvider } from "react-scroll-parallax";
 import AOS from "aos";
-
 import "aos/dist/aos.css";
-
 import { useEffect } from "react";
-
 import Inicio from "./components/Inicio/Inicio";
-
 import Nosotros from "./components/Nosotros/Nosotros";
-
 import Proceso from "./components/Proceso/Proceso";
-
 import Vino from "./components/Vino/Vino";
-
 import Participacion from "./components/Participacion/Participacion";
-
 import Presentacion from "./components/Presentacion/Presentacion";
-
 import Carrousel from "./components/Carrousel/Carrousel";
-
 import Encontrarnos from "./components/Encontrarnos/Encontrarnos";
-
 import Plantas from "./components/Plantas/Plantas";
-
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -34,9 +22,7 @@ function App() {
     <div className="App">
       <ParallaxProvider>
         <Inicio />
-
         <Nosotros />
-
         <div
           data-aos="fade-up"
           data-aos-duration="1500"
@@ -48,9 +34,7 @@ function App() {
             agua, el fuego y la <strong>intención humana</strong>”
           </p>
         </div>
-
         <Proceso />
-
         <div className="textoRandom hazEnvesFondo">
           <p
             data-aos="fade-up"
@@ -66,13 +50,9 @@ function App() {
             <strong>natural.</strong>”
           </p>
         </div>
-
         <Vino />
-
         <Participacion />
-
         <Presentacion />
-
         <div className="textoRandom">
           <p
             data-aos="fade-up"
@@ -84,13 +64,9 @@ function App() {
             de conexión con la <strong>naturaleza.</strong>”
           </p>
         </div>
-
         <Carrousel />
-
         <Encontrarnos />
-
         <Plantas />
-
         <Footer />
       </ParallaxProvider>
     </div>

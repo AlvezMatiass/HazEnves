@@ -1,103 +1,234 @@
 .encontrarnos {
-    height: 100vh;
+  width: 95vw;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .encontrarnosContainer {
+    .encoTituloContainer {
+      align-self: start;
 
-    .encontrarnosContainer {
+      .encoTitulo {
+        font-family: "Spectral", serif;
+        font-size: 38px;
+        color: #541e0a;
+      }
+    }
 
-        .encoTituloContainer {
-            align-self: start;
+    .imgContainer {
+      display: flex;
+      align-items: center;
+      .cuatroImgContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 5vh;
+        column-gap: 5vw;
+        align-content: center;
+        margin-inline: auto;
 
-            .encoTitulo {
-                font-family: 'Spectral', serif;
-                font-size: 38px;
-                color: #541E0A;
-    
-            }
+        .react-card-flip {
+          position: relative;
+          height: 37.5vh;
+          min-width: 240px;
+          aspect-ratio: 3/4;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 10px;
+          transition: transform 0.5s;
         }
-    
-        .imgContainer {
-            display: flex;
 
-            .ramaImg {
-                width: 460px;
-                height: 620px;
-                margin: 0 20px 0 0;
-                border-radius: 20px;
-            }
-    
-            .cuatroImgContainer {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                gap: 20px;
-    
-                .pruebaFondoNashe {
-                    width: 280px;
-                    height: 300px;
-                    background-image: url('/img/partioLorenza.jpg');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
-                    border-radius: 10px;
-            
-                    display: flex;
-                    justify-content: center;
-                    align-items: end;
+        p {
+          position: absolute;
+          font-family: "Spectral", serif;
 
-                    transition: transform .5s;
-
-                    p {
-                        font-size: 24px;
-                        font-family: 'Spectral', serif;
-                        color: #FFFFFF;
-                        margin: 0 0 4px 0;
-                    }
-                }
-
-                .imgFondoTexto.clicked {
-                    transform: translateY(-120px);
-                }
-                
-            }
+          border-radius: 10px;
         }
-    }  
+      }
+    }
+  }
+}
+.react-card-front {
+  p {
+    color: #541e0a;
+    background-color: #fafafa;
+    opacity: 0.75;
+    width: 95%;
+    text-align: center;
+    flex-wrap: nowrap;
+    font-size: 22px;
+    top: calc(47% - 0.5em);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.react-card-back {
+  p {
+    color: #fafafa;
+    width: 95%;
+    text-align: center;
+    flex-wrap: nowrap;
+    font-size: 22px;
+    top: calc(65% - 0.5em);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .titulo-back {
+    text-align: center;
+    flex-wrap: nowrap;
+    font-size: 22px;
+    top: calc(18% - 0.5em);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  a p {
+    background-color: #746653;
+    padding: 0.4vw;
+    opacity: 0.95;
+  }
+}
+.ramaImg {
+  max-width: 45vw;
+  max-height: 80vh;
+  margin: 0 7vw 0 0;
+  border-radius: 20px;
 }
 
-@media (max-width: 900px) {
-    .encontrarnos {
-        height: 60vh;
-        margin: 0 0 32px 0;
-        .encontrarnosContainer {
-    
-            .encoTituloContainer {
-    
-                .encoTitulo {
-                    font-family: 'Spectral', serif;
-                    font-size: 24px;
-                    color: #541E0A;
-        
-                }
-            }
-        
-            .imgContainer {
-                .ramaImg {
-                    display: none;
-                }
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  border-style: solid;
+  border-width: 0 35px 25px 0;
+  border-color: #ddd #e8e5d2;
+  animation: fold 3s infinite;
+}
 
-                .cuatroImgContainer {
-                    gap: 14px;
-        
-                    .pruebaFondoNashe {
-                        width: 120px;
-                        height: 200px;
-                        border-radius: 6px;
-                    }
-                }
-            }
-        }
+@keyframes fold {
+  0% {
+    border-width: 0 35px 25px 0;
+  }
+  50% {
+    border-width: 0 45px 35px 0;
+    border-color: #eee #e8e5d2;
+  }
+  100% {
+    border-width: 0 35px 25px 0;
+    border-color: #ddd #e8e5d2;
+  }
+}
+
+.card,
+.card-bg,
+.card-flip-back-image {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.card-flip-back-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #897c68;
+  border-radius: 10px;
+  opacity: 0.3;
+}
+
+@media (max-width: 1300px) {
+  .imgContainer {
+    width: 95vw;
+  }
+  .react-card-flip {
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 150px;
+  }
+  .encontrarnos .encontrarnosContainer .imgContainer .cuatroImgContainer {
+    column-gap: 2vw;
+    row-gap: 5vh;
+  }
+  .encontrarnos
+    .encontrarnosContainer
+    .imgContainer
+    .cuatroImgContainer
+    .react-card-flip {
+    height: 37.5vh;
+  }
+  .ramaImg {
+    margin: 0 3vw 0 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .encoTitulo {
+    margin-bottom: 2vh;
+  }
+  .ramaImg {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .encontrarnos
+    .encontrarnosContainer
+    .imgContainer
+    .cuatroImgContainer
+    .react-card-flip {
+    width: 43vw;
+    aspect-ratio: 3/4;
+    min-width: 0px;
+    strong {
+      font-size: 20px;
     }
+    p {
+      font-size: 17px;
+    }
+  }
+}
+@media (min-width: 400px) {
+  .encontrarnos {
+    height: 100vh;
+  }
+}
+@media (max-width: 400px) {
+  .encontrarnos {
+    display: block;
+  }
+  .react-card-front,
+  .react-card-back {
+    p {
+      width: 60%;
+    }
+  }
+  .encoTituloContainer {
+    margin-inline: 3vw;
+  }
+  .encontrarnos .encontrarnosContainer .imgContainer .cuatroImgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .react-card-flip {
+      width: 75vw;
+      min-height: 48vh;
+      aspect-ratio: 3/4;
+      min-width: 0px;
+    }
+  }
+  .encontrarnos .encontrarnosContainer .imgContainer {
+    display: block;
+  }
 }
