@@ -78,7 +78,6 @@ const Proceso = () => {
       items: 1,
       itemsFit: "contain",
     },
-    // 700: { items: 2 },
   };
   return (
     <div id="proceso">
@@ -146,15 +145,11 @@ const Proceso = () => {
       <div className="carrousel-proceso show-carrousel">
         <p className="titulo">Proceso Creativo</p>
         <AliceCarousel
-          autoPlay
           autoPlayStrategy="default"
           autoPlayInterval={2800}
           animationDuration={1000}
-          // autoHeight
-          // autoWidth
           mouseTracking
           touchTracking
-          disableButtonsControls
           fadeOutAnimation={true}
           mouseDragEnabled={true}
           disableDotsControls={true}

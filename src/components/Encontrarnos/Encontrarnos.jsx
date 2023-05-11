@@ -63,7 +63,11 @@ const Encontrarnos = () => {
         <div className="imgContainer">
           <img src="./img/ropaRama.png" alt="" className="ramaImg" />
           <div className="cuatroImgContainer">
-            <CardFlip isFlipped={isFlipped3} flipDirection="horizontal">
+            <CardFlip
+              isFlipped={isFlipped3}
+              flipDirection="horizontal"
+              className="fold"
+            >
               <div
                 onMouseDown={() => handleMouseEnter(3)}
                 onMouseEnter={() => handleMouseEnter(3)}
